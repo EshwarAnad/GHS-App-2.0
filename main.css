@@ -1,0 +1,384 @@
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back-btn {
+    width: 15px;
+    float: left;
+    margin-left: 0px;
+    padding: 21px;
+}
+
+
+
+
+
+
+
+.hamburger-menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 50;
+    width: 250px;
+    background-color: white;
+    height: 100%;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+    display: none;
+    padding-right:
+}
+
+.close {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: fixed;
+    left: 0px;
+    z-index: 48;
+    display: none;
+    border: none;
+}
+
+.top-nav > button {
+    float: left;
+    color: white;
+    margin-left: 23px;
+    margin-top: -4px;
+    background-color: transparent;
+    border: none;
+}
+
+.top-nav > h3 {
+    color: white;
+    margin-left: 62px;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 18px;
+    margin-bottom: 156px;
+    ;
+}
+
+.top-nav > img {
+    height: 173px;
+    width: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    left: 0px;
+}
+
+.options-sect > h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.options-sect {
+    margin-left: 20px;
+}
+
+.options-sect > p {
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: -2px;
+}
+
+.dark-sect > h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: -4px;
+}
+
+.dark-sect > p {
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.dark-sect {
+    margin: auto;
+    width: 112px;
+    margin-top: 62px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 39px;
+}
+
+.bottom > h3 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.top-navigation > h1 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.top-navigation {
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    margin: auto;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
+    z-index: 15;
+}
+
+.top-navigation > button {
+    background-color: transparent;
+    border: none;
+}
+
+.vert-menu > a > img {
+    width: 4px;
+    float: right;
+    margin-top: -38px;
+    margin-right: 13px;
+    padding: 10px;
+}
+
+.spacer {
+    width: 100%;
+    height: 56px;
+}
+
+.logo {
+    width: 64px;
+}
+
+.menu {
+    position: fixed;
+    left: 3px;
+    top: 1px;
+    padding: 15px;
+}
+
+.search {
+    position: fixed;
+    right: 3px;
+    top: 1px;
+    padding: 15px;
+}
+
+.logo-wrapper {
+    margin: auto;
+    width: 64px;
+    margin-top: 8px;
+}
+
+.navigation-card {
+    margin: auto;
+    width: 100%;
+}
+
+.navigation-card > a > div > h4 {
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 0px;
+    color: #737474;
+    margin-bottom: 12px;
+}
+
+.navigation-card > h3 {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 6px;
+    width: 336px;
+
+}
+
+.navigation-card > h3 > span {
+    text-decoration-line: line-through;
+    color: dimgray
+}
+
+.navigation-card > p {
+    margin: auto;
+    width: 90%;
+    ;
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 19px;
+}
+
+.card-btns {
+    margin-left: 0%;
+    margin-top: 15px;
+}
+
+.card-btns > a > input {
+    border: none;
+    height: 20px;
+    width: 68px;
+    margin-left: 20px;
+}
+
+card-btns > button > a {
+    color: black;
+}
+
+.card-btns > a > button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding-right: 22px;
+    padding-left: 22px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: -7px;
+    margin-bottom: -7px;
+
+    border-color: black;
+    margin-left: -5px;
+}
+
+.card-btns > a > button:focus {
+    outline: none;
+}
+
+.focus-btn {
+    background-color: black;
+    color: white;
+}
+
+.card-icon {
+    width: 40px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 50px;
+    height: 40px;
+    object-fit: cover;
+
+}
+
+
+
+.card-img {
+    margin-top: 0px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    border: none;
+}
+
+
+
+
+
+
+
+.card-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #4D4D4D;
+    filter: opacity(0.2);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.ad-unit {}
+
+
+.button-items > img {
+    width: 96px;
+}
+
+.button-items {
+    margin: auto;
+    width: 297px;
+}
+
+.bottom-navigation {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+
+    z-index: 15;
+    border-top: solid;
+    border-width: 1.3px;
+    border-color: lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.horizontal-nav {
+    width: 100%;
+    height: 37px;
+    background-color: white;
+}
+
+.button-wrapper > button {
+    width: 76px;
+    margin-top: 6px;
+    border: none;
+    background-color: transparent;
+    color: #898989;
+    transition: 0.5s ease;
+    padding-bottom: 13px;
+}
+
+.button-wrapper > button:focus {
+    color: #012395;
+    outline: none;
+    border-bottom: solid;
+    border-width: 1.2px;
+}
+
+.button-wrapper {
+    margin: auto;
+    width: 154px;
+    margin-top:
+}

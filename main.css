@@ -159,7 +159,7 @@ a {
     transform: translateX(-50%);
     top: 0px;
     margin: auto;
-   
+
     z-index: 15;
 }
 
@@ -416,10 +416,32 @@ card-btns > button > a {
 
 }
 
-.live-info {margin: auto; width: 326px;}
+.live-info {
+    margin: auto;
+    width: 326px;
 
-.live-info > h3 {font-size: 14px;text-align: center; font-weight: normal; }
+}
 
-.live-images > img{width: 150px; height: 150px;object-fit: cover;float: left;border-radius: }
+.live-info > h3 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: normal;
+}
 
-.vertical-divider {width: 1.3px; height: 250px;; background-color:lightgray;float: left;margin-right: 10px;margin-left: 10px;}
+.live-images > img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    border-radius:
+}
+
+.vertical-divider {
+    width: 1.3px;
+    height: 150px;
+    ;
+    background-color: lightgray;
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}

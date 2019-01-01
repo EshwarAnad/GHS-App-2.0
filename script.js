@@ -6,11 +6,15 @@
 
   var videosect = document.getElementsByClassName("video-sect");
 
-  var topnavbar = document.getElementsByClassName("top-navigation")
+  var topnavbar = document.getElementsByClassName("top-navigation");
 
-  var homescreen = document.getElementsByClassName("homescreen")
+  var homescreen = document.getElementsByClassName("homescreen");
 
-  var mediasect = document.getElementsByClassName("media-sect")
+  var mediasect = document.getElementsByClassName("media-sect");
+
+  var athleticsect = document.getElementsByClassName("athletic-sect");
+
+
 
   function expand() {
       hammenu[0].style.display = "block";
@@ -35,6 +39,21 @@
 
   function leftpress() {
       homescreen[0].style.display = "none";
-      topnavbar[0].style.boxShadow = "0px;"
-      mediasect[0].style.display = "block"
+      topnavbar[0].style.boxShadow = "0px;";
+      mediasect[0].style.display = "block";
+      athleticsect[0].style.display = "none"
   }
+
+  function homepress() {
+      homescreen[0].style.display = "block";
+      mediasect[0].style.display = "none";
+      athleticsect[0].style.display = "none";
+  }
+
+  function rightpress() {
+      homescreen[0].style.display = "none";
+      mediasect[0].style.display = "none";
+      athleticsect[0].style.display = "block"
+
+  }
+

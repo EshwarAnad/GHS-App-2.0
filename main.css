@@ -563,8 +563,12 @@ card-btns > button > a {
 }
 
 .search-input {
-    width: 100%;
+    width: 99%;
     height: 45px;
+    position: fixed;
+    top: 56px;
+    background-color: white;
+    z-index: 15;
 }
 
 .search-input:focus {
@@ -573,8 +577,9 @@ card-btns > button > a {
 
 .teacher-list {
     text-decoration: none;
-    margin-left: -12px;
-
+    padding-left: 53px;
+    width: 50px;
+    margin-top: 61px;
 }
 
 .teacher-list > li {

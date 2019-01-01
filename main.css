@@ -485,3 +485,25 @@ card-btns > button > a {
     left: 0px;
     height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+.grades-sect > iframe {
+    width: 108%;
+    height: 88%;
+    position: fixed;
+    top: 53px;
+    border: none;
+    left: -9px;
+}
+
+.grades-sect {
+    display: none;
+}

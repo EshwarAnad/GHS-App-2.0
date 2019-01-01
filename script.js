@@ -55,12 +55,14 @@
 
 
   function leftpress() {
+
       homescreen[0].style.display = "none";
       topnavbar[0].style.boxShadow = "0px;";
       mediasect[0].style.display = "block";
       athleticsect[0].style.display = "none"
       gradessect[0].style.display = "none"
       mealmenu[0].style.display = "none";
+      document.getElementById("btn-video").focus();
   }
 
   function homepress() {
@@ -77,6 +79,8 @@
       athleticsect[0].style.display = "block";
       gradessect[0].style.display = "none";
       mealmenu[0].style.display = "none";
+      document.getElementById("btn-schedule").focus();
+
   }
 
 
@@ -96,6 +100,7 @@
       hammenu[0].style.display = "none";
       gradessect[0].style.display = "block";
       mealmenu[0].style.display = "none";
+
   }
 
   function meal() {
@@ -106,4 +111,5 @@
       athleticsect[0].style.display = "none";
       hammenu[0].style.display = "none";
       gradessect[0].style.display = "none";
+      document.getElementById("btn-lunch").focus();
   }

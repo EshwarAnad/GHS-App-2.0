@@ -398,7 +398,7 @@ card-btns > button > a {
     border: none;
     background-color: transparent;
     color: #898989;
-    transition: 0.5s ease;
+    transition: 0.7s ease;
     padding-bottom: 13px;
 }
 
@@ -406,7 +406,7 @@ card-btns > button > a {
     color: #012395;
     outline: none;
     border-bottom: solid;
-    border-width: 1.2px;
+    border-width: 1.5px;
 }
 
 .button-wrapper {

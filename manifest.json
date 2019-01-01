@@ -1,0 +1,21 @@
+{
+    "short_name": "GHS App",
+    "name": "GHS App",
+    "icons": [
+        {
+            "src": "Branding/glogo192px.png",
+            "type": "image/png",
+            "sizes": "192x192"
+    }
+        , {
+            "src": "Branding/512pxlogo.png",
+            "type": "image/png",
+            "sizes": "512x512"
+    }
+  ],
+    "start_url": "index.html",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "index.html",
+    "theme_color": "#ffffff"
+}

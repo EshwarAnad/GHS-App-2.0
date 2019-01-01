@@ -587,4 +587,9 @@ card-btns > button > a {
     padding-bottom: 13px;
     padding-top: 13px;
     padding-right: 0px;
+    color: #012395;
+}
+
+.teacher-list > li > a {
+    color: #012395;
 }

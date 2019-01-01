@@ -22,6 +22,8 @@
 
   var breakfastmenu = document.getElementsByClassName("breakfast-menu");
 
+  var searchsect = document.getElementsByClassName("search-sect");
+
   function expand() {
       hammenu[0].style.display = "block";
       close[0].style.display = "block";
@@ -62,7 +64,9 @@
       athleticsect[0].style.display = "none"
       gradessect[0].style.display = "none"
       mealmenu[0].style.display = "none";
+      searchsect[0].style.display = "none";
       document.getElementById("btn-video").focus();
+
   }
 
   function homepress() {
@@ -71,6 +75,7 @@
       athleticsect[0].style.display = "none";
       gradessect[0].style.display = "none";
       mealmenu[0].style.display = "none";
+      searchsect[0].style.display = "none";
   }
 
   function rightpress() {
@@ -80,7 +85,7 @@
       gradessect[0].style.display = "none";
       mealmenu[0].style.display = "none";
       document.getElementById("btn-schedule").focus();
-
+      searchsect[0].style.display = "none";
   }
 
 
@@ -100,7 +105,7 @@
       hammenu[0].style.display = "none";
       gradessect[0].style.display = "block";
       mealmenu[0].style.display = "none";
-
+      searchsect[0].style.display = "none";
   }
 
   function meal() {
@@ -111,5 +116,34 @@
       athleticsect[0].style.display = "none";
       hammenu[0].style.display = "none";
       gradessect[0].style.display = "none";
+      searchsect[0].style.display = "none";
       document.getElementById("btn-lunch").focus();
+  }
+
+  function searchopen() {
+      searchsect[0].style.display = "block";
+      homescreen[0].style.display = "none";
+      mediasect[0].style.display = "none";
+      gradessect[0].style.display = "none";
+      athleticsect[0].style.display = "none";
+      hammenu[0].style.display = "none";
+      gradessect[0].style.display = "none";
+      mealmenu[0].style.display = "none";
+      document.getElementById("mySearch").focus();
+  }
+
+  function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
   }

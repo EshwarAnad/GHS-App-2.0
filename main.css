@@ -39,7 +39,7 @@ a {
 .hamburger-menu {
     position: fixed;
     left: 0px;
-    top: 0px;
+    top: -1px;
     z-index: 50;
     width: 250px;
     background-color: white;
@@ -89,7 +89,7 @@ a {
     left: 0px;
 }
 
-.options-sect > h3 {
+.options-sect > button > h3 {
     font-size: 14px;
     font-weight: normal;
     margin-bottom: 3px;
@@ -99,7 +99,19 @@ a {
     margin-left: 20px;
 }
 
-.options-sect > p {
+.options-sect > button {
+    background-color: transparent;
+    border: none;
+    padding-right: 85px;
+    margin-top: -6px;
+
+}
+
+.options-sect > button:focus {
+    outline: none;
+}
+
+.options-sect > button > p {
     font-size: 10px;
     font-weight: normal;
     margin-top: 0px;
@@ -192,6 +204,10 @@ a {
     padding: 15px;
 }
 
+.menu:focus {
+    outline: none;
+}
+
 .search {
     position: fixed;
     right: 3px;
@@ -257,7 +273,7 @@ card-btns > button > a {
 }
 
 .card-btns > a > button {
-    background-color: white;
+    background-color: transparent;
     border: none;
     color: black;
     padding-right: 22px;
@@ -327,6 +343,7 @@ card-btns > button > a {
     background-color: transparent;
 
 }
+
 
 .button-items {
     margin: auto;
@@ -463,6 +480,8 @@ card-btns > button > a {
 
 .athletic-sect > iframe {
     width: 100%;
-    margin-top: 91px;
-    height: 91vh
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
 }

@@ -168,7 +168,7 @@ a {
     background-color: white;
     position: fixed;
     left: 0px;
-   
+
     top: 0px;
     margin: auto;
 
@@ -500,14 +500,48 @@ card-btns > button > a {
 
 
 .grades-sect > iframe {
-    width: 108%;
+    width: 100%;
     height: 88%;
     position: fixed;
     top: 53px;
     border: none;
-    left: -9px;
+    left: 0px;
 }
 
 .grades-sect {
+    display: none;
+}
+
+
+
+
+
+
+
+.meal {
+
+    position: absolute;
+    top: -179px;
+
+}
+
+
+.meal-menu {
+    display: none;
+
+
+}
+
+.meal-wrapper {
+    margin: auto;
+    width: 360px;
+
+}
+
+.meal-wrapper > img {
+    width: 360px;
+}
+
+.breakfast-menu {
     display: none;
 }

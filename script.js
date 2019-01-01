@@ -16,7 +16,11 @@
 
   var gradessect = document.getElementsByClassName("grades-sect");
 
+  var mealmenu = document.getElementsByClassName("meal-menu");
 
+  var lunchmenu = document.getElementsByClassName("lunch-menu");
+
+  var breakfastmenu = document.getElementsByClassName("breakfast-menu");
 
   function expand() {
       hammenu[0].style.display = "block";
@@ -39,12 +43,24 @@
       videosect[0].style.display = "none";
   }
 
+  function lunch() {
+      lunchmenu[0].style.display = "block";
+      breakfastmenu[0].style.display = "none";
+  }
+
+  function breakfast() {
+      lunchmenu[0].style.display = "none";
+      breakfastmenu[0].style.display = "block";
+  }
+
+
   function leftpress() {
       homescreen[0].style.display = "none";
       topnavbar[0].style.boxShadow = "0px;";
       mediasect[0].style.display = "block";
       athleticsect[0].style.display = "none"
       gradessect[0].style.display = "none"
+      mealmenu[0].style.display = "none";
   }
 
   function homepress() {
@@ -52,6 +68,7 @@
       mediasect[0].style.display = "none";
       athleticsect[0].style.display = "none";
       gradessect[0].style.display = "none";
+      mealmenu[0].style.display = "none";
   }
 
   function rightpress() {
@@ -59,7 +76,16 @@
       mediasect[0].style.display = "none";
       athleticsect[0].style.display = "block";
       gradessect[0].style.display = "none";
+      mealmenu[0].style.display = "none";
   }
+
+
+
+
+
+
+
+
 
   function grades() {
 
@@ -69,4 +95,15 @@
       athleticsect[0].style.display = "none";
       hammenu[0].style.display = "none";
       gradessect[0].style.display = "block";
+      mealmenu[0].style.display = "none";
+  }
+
+  function meal() {
+      mealmenu[0].style.display = "block";
+      homescreen[0].style.display = "none";
+      mediasect[0].style.display = "none";
+      gradessect[0].style.display = "none";
+      athleticsect[0].style.display = "none";
+      hammenu[0].style.display = "none";
+      gradessect[0].style.display = "none";
   }

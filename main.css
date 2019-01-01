@@ -344,6 +344,10 @@ card-btns > button > a {
 
 }
 
+.button-items > button:focus {
+    outline: none;
+}
+
 
 .button-items {
     margin: auto;

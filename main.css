@@ -89,6 +89,8 @@ a {
     left: 0px;
 }
 
+.weather {position: fixed; top: 26px;width: 132px;left: 32px;}
+
 .options-sect > button > h3 {
     font-size: 14px;
     font-weight: normal;

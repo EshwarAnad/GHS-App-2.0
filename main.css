@@ -563,14 +563,17 @@ card-btns > button > a {
 
 .admiralnation-sect > iframe {
     width: 100%;
-    position: fixed;
+    position: absolute;
     left: 0px;
-    top: 46px;
-    height: 87.4vh;
+
+    height: 100%;
     border: none;
+    top: 45px;
 }
 
-
+.admiralnation-sect {
+    display: none;
+}
 
 
 

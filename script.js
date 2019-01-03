@@ -24,6 +24,8 @@
 
   var searchsect = document.getElementsByClassName("search-sect");
 
+  var admiralnationsect = document.getElementsByClassName("admiralnation-sect")
+
   function expand() {
       hammenu[0].style.display = "block";
       close[0].style.display = "block";
@@ -66,6 +68,7 @@
       mealmenu[0].style.display = "none";
       searchsect[0].style.display = "none";
       document.getElementById("btn-video").focus();
+      admiralnationsect[0].style.display = "none";
 
   }
 
@@ -76,6 +79,7 @@
       gradessect[0].style.display = "none";
       mealmenu[0].style.display = "none";
       searchsect[0].style.display = "none";
+      admiralnationsect[0].style.display = "none";
   }
 
   function rightpress() {
@@ -86,6 +90,7 @@
       mealmenu[0].style.display = "none";
       document.getElementById("btn-schedule").focus();
       searchsect[0].style.display = "none";
+      admiralnationsect[0].style.display = "none";
   }
 
 
@@ -94,7 +99,17 @@
 
 
 
-
+  function admiral() {
+      homescreen[0].style.display = "none";
+      mediasect[0].style.display = "none";
+      gradessect[0].style.display = "none";
+      athleticsect[0].style.display = "none";
+      hammenu[0].style.display = "none";
+      gradessect[0].style.display = "none";
+      mealmenu[0].style.display = "none";
+      searchsect[0].style.display = "none";
+      admiralnationsect[0].style.display = "block";
+  }
 
   function grades() {
 
@@ -106,6 +121,7 @@
       gradessect[0].style.display = "block";
       mealmenu[0].style.display = "none";
       searchsect[0].style.display = "none";
+      admiralnationsect[0].style.display = "none";
   }
 
   function meal() {
@@ -118,6 +134,7 @@
       gradessect[0].style.display = "none";
       searchsect[0].style.display = "none";
       document.getElementById("btn-lunch").focus();
+      admiralnationsect[0].style.display = "none";
   }
 
   function searchopen() {
@@ -130,6 +147,7 @@
       gradessect[0].style.display = "none";
       mealmenu[0].style.display = "none";
       document.getElementById("mySearch").focus();
+      admiralnationsect[0].style.display = "none";
   }
 
   function myFunction() {

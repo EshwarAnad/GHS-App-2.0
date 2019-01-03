@@ -89,7 +89,12 @@ a {
     left: 0px;
 }
 
-.weather {position: fixed; top: 26px;width: 132px;left: 32px;}
+.weather {
+    position: fixed;
+    top: 26px;
+    width: 132px;
+    left: 32px;
+}
 
 .options-sect > button > h3 {
     font-size: 14px;
@@ -554,6 +559,16 @@ card-btns > button > a {
 
 
 
+
+
+.admiralnation-sect > iframe {
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 46px;
+    height: 87.4vh;
+    border: none;
+}
 
 
 

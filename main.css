@@ -494,12 +494,15 @@ card-btns > button > a {
 .athletic-sect > iframe {
     width: 100%;
     position: fixed;
-    top: 0px;
+    top: 90px;
     left: 0px;
     height: 100%;
+    border: none;
 }
 
-
+.site {
+    display: none;
+}
 
 
 
@@ -563,12 +566,13 @@ card-btns > button > a {
 
 .admiralnation-sect > iframe {
     width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0px;
 
-    height: 100%;
+
     border: none;
     top: 45px;
+    height: 92.5vh;
 }
 
 .admiralnation-sect {

@@ -57,6 +57,16 @@
       breakfastmenu[0].style.display = "block";
   }
 
+  function schedule() {
+      document.getElementsByClassName("calendar")[0].style.display = "block";
+      document.getElementsByClassName("site")[0].style.display = "none";
+  }
+
+  function site() {
+      document.getElementsByClassName("site")[0].style.display = "block";
+      document.getElementsByClassName("calendar")[0].style.display = "none";
+  }
+
 
   function leftpress() {
 
@@ -149,6 +159,8 @@
       document.getElementById("mySearch").focus();
       admiralnationsect[0].style.display = "none";
   }
+
+
 
   function myFunction() {
       var input, filter, ul, li, a, i;

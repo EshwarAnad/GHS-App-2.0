@@ -407,13 +407,14 @@ card-btns > button > a {
 }
 
 .button-wrapper > button {
-    width: 76px;
-    margin-top: 6px;
+    width: 80px;
+    margin-top: -2.5px;
     border: none;
     background-color: transparent;
     color: #898989;
     transition: 0.7s ease;
     padding-bottom: 13px;
+	height:40px;
 }
 
 .button-wrapper > button:focus {
@@ -425,7 +426,7 @@ card-btns > button > a {
 
 .button-wrapper {
     margin: auto;
-    width: 154px;
+    width: 160px;
 
 }
 

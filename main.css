@@ -217,6 +217,10 @@ a {
     outline: none;
 }
 
+.menu > i {width:24px; height:24px;}
+
+.menu > i > img {object-fit:cover; }
+
 .search {
     position: fixed;
     right: 3px;

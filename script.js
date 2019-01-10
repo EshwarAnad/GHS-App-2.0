@@ -24,7 +24,9 @@
 
   var searchsect = document.getElementsByClassName("search-sect");
 
-  var admiralnationsect = document.getElementsByClassName("admiralnation-sect")
+  var admiralnationsect = document.getElementsByClassName("admiralnation-sect");
+  
+  var kahootsect = document.getElementsByClassName("kahoot-sect")
 
   function expand() {
       hammenu[0].style.display = "block";
@@ -69,7 +71,7 @@
 
 
   function leftpress() {
-
+kahootsect[0].style.display = "none";
       homescreen[0].style.display = "none";
       topnavbar[0].style.boxShadow = "0px;";
       mediasect[0].style.display = "block";
@@ -83,6 +85,7 @@
   }
 
   function homepress() {
+	  kahootsect[0].style.display = "none";
       homescreen[0].style.display = "block";
       mediasect[0].style.display = "none";
       athleticsect[0].style.display = "none";
@@ -93,6 +96,7 @@
   }
 
   function rightpress() {
+	  kahootsect[0].style.display = "none";
       homescreen[0].style.display = "none";
       mediasect[0].style.display = "none";
       athleticsect[0].style.display = "block";
@@ -107,9 +111,21 @@
 
 
 
-
+function kahoot(){
+	kahootsect[0].style.display = "block";
+	 homescreen[0].style.display = "none";
+      mediasect[0].style.display = "none";
+      gradessect[0].style.display = "none";
+      athleticsect[0].style.display = "none";
+      hammenu[0].style.display = "none";
+      gradessect[0].style.display = "none";
+      mealmenu[0].style.display = "none";
+      searchsect[0].style.display = "none";
+      admiralnationsect[0].style.display = "none";
+}
 
   function admiral() {
+	  kahootsect[0].style.display = "none";
       homescreen[0].style.display = "none";
       mediasect[0].style.display = "none";
       gradessect[0].style.display = "none";
@@ -122,7 +138,7 @@
   }
 
   function grades() {
-
+kahootsect[0].style.display = "none";
       homescreen[0].style.display = "none";
       mediasect[0].style.display = "none";
       gradessect[0].style.display = "none";
@@ -135,6 +151,7 @@
   }
 
   function meal() {
+	  kahootsect[0].style.display = "none";
       mealmenu[0].style.display = "block";
       homescreen[0].style.display = "none";
       mediasect[0].style.display = "none";
@@ -148,6 +165,7 @@
   }
 
   function searchopen() {
+	  kahootsect[0].style.display = "none";
       searchsect[0].style.display = "block";
       homescreen[0].style.display = "none";
       mediasect[0].style.display = "none";

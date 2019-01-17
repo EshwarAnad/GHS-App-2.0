@@ -3,12 +3,12 @@
     "name": "GHS App",
     "icons": [
         {
-            "src": "Branding/glogo192px.png",
+            "src": "Branding/192px%20logo.png",
             "type": "image/png",
             "sizes": "192x192"
     }
         , {
-            "src": "Branding/512pxlogo.png",
+            "src": "Branding/._512px%20logo.png",
             "type": "image/png",
             "sizes": "512x512"
     }

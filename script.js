@@ -26,7 +26,7 @@
 
   var admiralnationsect = document.getElementsByClassName("admiralnation-sect");
   
-  var kahootsect = document.getElementsByClassName("kahoot-sect")
+  var kahootsect = document.getElementsByClassName("kahoot-sect");
 
   function expand() {
       hammenu[0].style.display = "block";

@@ -122,6 +122,7 @@ function kahoot(){
       mealmenu[0].style.display = "none";
       searchsect[0].style.display = "none";
       admiralnationsect[0].style.display = "none";
+close[0].style.display = "none";
 }
 
   function admiral() {
@@ -135,6 +136,7 @@ function kahoot(){
       mealmenu[0].style.display = "none";
       searchsect[0].style.display = "none";
       admiralnationsect[0].style.display = "block";
+close[0].style.display = "none";
   }
 
   function grades() {
@@ -148,6 +150,7 @@ kahootsect[0].style.display = "none";
       mealmenu[0].style.display = "none";
       searchsect[0].style.display = "none";
       admiralnationsect[0].style.display = "none";
+close[0].style.display = "none";
   }
 
   function meal() {
@@ -176,6 +179,7 @@ kahootsect[0].style.display = "none";
       mealmenu[0].style.display = "none";
       document.getElementById("mySearch").focus();
       admiralnationsect[0].style.display = "none";
+close[0].style.display = "none";
   }
 
 

@@ -107,6 +107,7 @@ a {
 
 .options-sect {
     margin-left: 20px;
+    margin-top: 33px;
 }
 
 .options-sect > button {
@@ -149,6 +150,8 @@ a {
     position: absolute;
     bottom: 0px;
     left: 58px;
+    margin-bottom: 15px;
+    filter: opacity(0.5)
 }
 
 .bottom > h3 {
@@ -676,5 +679,11 @@ card-btns > button > a {
 }
 
 .menu-cover {
-    width: 50px; height: 50px; background-color: white; position: fixed;top: 53px; right: 18px;z-index:15;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 53px;
+    right: 18px;
+    z-index: 15;
 }

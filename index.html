@@ -17,7 +17,6 @@
     <link rel="apple-touch-startup-image" href="Assets/IOS%20Splashscreen.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="GHS App">
-    <link rel="icon" sizes="192x192" href="Branding/192px%20logo.png">
     <link rel="apple-touch-icon" href="Branding/192px%20logo.png">
 </head>
 
@@ -165,7 +164,10 @@
             </div>
 
         </div>
-
+        
+        <div class="card-divider"></div>
+        
+        
         
         <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
 
@@ -178,7 +180,7 @@
                 </div>
             </a>
 
-            <img class="card-img" style="height:185px;" src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/12005756552/original/web_app_ios_add_to_homescreen.png?1464726026">
+            <img class="card-img" style="height:185px;" src="Assets/AddToHomeIos.png">
             <p>Don't Forget to Add GHS App To Your Homescreen</p>
 
             <div class="card-btns">
@@ -188,8 +190,6 @@
             </div>
         </div>
 
-
-        <div class="card-divider"></div>
 
 
         <div class="card-divider"></div>
@@ -486,7 +486,6 @@
     </script>
     <script>
         AOS.init();
-
     </script>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -498,8 +497,9 @@
                 });
             });
         });
-
     </script>
+    <script src="sw.js"></script>
+    <script src="Service-Worker.js"></script>
 
 </body>
 

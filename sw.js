@@ -1,21 +1,41 @@
-self.addEventListener('install', function (event) {
-    // Perform install steps
-});
+if ('serviceWorker' in navigator) {
 
-var CACHE_NAME = 'my-site-cache-v1';
-var urlsToCache = [
-  '/',
-  '/styles/main.css',
-  '/script/main.js'
-];
-
-self.addEventListener('install', function (event) {
-    // Perform install steps
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-        .then(function (cache) {
-            console.log('Opened cache');
-            return cache.addAll(urlsToCache);
+    navigator.serviceWorker
+        .register('./service-worker.js', {
+            scope: './'
         })
-    );
-});
+        .then(function (registration) {
+            console.log("Service Worker Registered");
+        })
+        .catch(function (err) {
+            console.log("Service Worker Failed to Register", err);
+        })
+
+}
+
+
+
+// Function to perform HTTP request
+var get = function (url) {
+    return new Promise(function (resolve, reject) {
+
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    var result = xhr.responseText          result = JSON.parse(result);
+                    resolve(result);
+                } else {
+                    reject(xhr);
+                }
+            }
+        };
+
+        xhr.open("GET", url, true);
+        xhr.send();
+
+    });
+};
+
+
+

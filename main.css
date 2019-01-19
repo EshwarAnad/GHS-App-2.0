@@ -38,7 +38,7 @@ a {
 
 .hamburger-menu {
     position: fixed;
-    left: 0px;
+    right: 0px;
     top: -1px;
     z-index: 50;
     width: 300px;
@@ -62,7 +62,7 @@ a {
 }
 
 .top-nav > button {
-    float: left;
+    float: right;
     color: white;
     margin-left: 23px;
     margin-top: -10px;
@@ -70,16 +70,17 @@ a {
     border: none;
     width: 40px;
     height: 40px;
+    margin-right: 14px;
 }
 
 .top-nav > h3 {
     color: white;
-    margin-left: 62px;
+    margin-left: 22px;
     font-weight: normal;
     font-size: 14px;
     margin-top: 18px;
     margin-bottom: 156px;
-    ;
+
 }
 
 .top-nav > img {
@@ -191,6 +192,7 @@ a {
 .top-navigation > button {
     background-color: transparent;
     border: none;
+
 }
 
 .vert-menu > a > img {
@@ -212,10 +214,10 @@ a {
 
 .menu {
     position: fixed;
-    left: 3px;
+    right: 4px;
     top: 1px;
     padding: 15px;
-    padding-right: 40px;
+    padding-left: 40px;
 
 
 }
@@ -249,6 +251,7 @@ a {
 .navigation-card {
     margin: auto;
     width: 100%;
+    background-color: white;
 }
 
 .navigation-card > a > div > h4 {
@@ -364,11 +367,11 @@ card-btns > button > a {
 
 
 .button-items > button {
-    width: 96px;
+    width: 65px;
     border: none;
     padding: 0;
     background-color: transparent;
-    margin-left: -17px;
+    margin-left: 5px;
 
 }
 
@@ -382,7 +385,7 @@ card-btns > button > a {
 
 .button-items {
     margin: auto;
-    width: 330px;
+    width: 308px;
 }
 
 .bottom-navigation {
@@ -512,6 +515,22 @@ card-btns > button > a {
 
 
 
+
+
+
+
+
+.hero-sect > img {
+    width: 100%;
+    margin-top: -15px;
+}
+
+.hero-sect {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    top: 71px;
+}
 
 
 
@@ -687,4 +706,11 @@ card-btns > button > a {
     top: 53px;
     right: 18px;
     z-index: 15;
+}
+
+.card-spacer {
+    width: 100%;
+    height: 5px;
+    margin-top: 361px;
+    position: relative;
 }

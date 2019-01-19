@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 65 55">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Menu);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #606060;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Menu">
+      <rect width="65" height="55"/>
+    </clipPath>
+  </defs>
+  <g id="Menu" class="cls-1">
+    <rect class="cls-4" width="65" height="55"/>
+    <g id="Group_425" data-name="Group 425" transform="translate(-144 -589)">
+      <text id="Menu-2" data-name="Menu" class="cls-2" transform="translate(160 621)"><tspan x="0" y="11">Menu</tspan></text>
+      <path id="ic_menu_24px" class="cls-3" d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z" transform="translate(163 600)"/>
+    </g>
+  </g>
+</svg>

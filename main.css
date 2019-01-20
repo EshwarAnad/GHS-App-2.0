@@ -15,7 +15,7 @@ a {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: roboto, sans-serif;
     margin: 0px;
 }
 
@@ -567,9 +567,38 @@ card-btns > button > a {
     top: 150px;
 }
 
+.calendar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+}
 
+.calendar > iframe {
+    height: 100%;
+}
 
+.rounded-btn-wrapper {
+    margin: auto;
+    width: 349px;
+    margin-top: 14px;
+}
 
+.rounded-btn > button {
+    border-radius: 4px;
+    width: 146px;
+    height: 41px;
+    background-color: white;
+    border: solid;
+    border-width: 1.3px;
+    border-color: lightgray;
+    float: left;
+    margin-left: 16px;
+}
+
+.rounded-btn > button:focus {
+    outline: none;
+}
 
 
 
@@ -650,9 +679,9 @@ card-btns > button > a {
 .kahoot-sect > iframe {
     position: fixed;
     left: 0px;
-    top: 50px;
+    top: -8px;
     width: 100%;
-    height: 84vh;
+    height: 104%;
     border: none;
 }
 

@@ -211,8 +211,6 @@
   }, false);
 
 
-  document.addEventListener('touchmove', function (event) {
-      if (event.scale !== 1) {
-          event.preventDefault();
-      }
+  document.documentElement.addEventListener('touchmove', function (event) {
+      event.preventDefault();
   }, false);

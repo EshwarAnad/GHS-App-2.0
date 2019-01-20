@@ -521,6 +521,17 @@ card-btns > button > a {
     margin-left: 10px;
 }
 
+.admiral-ad > a > img {
+    width: 149px;
+    border: solid;
+    border-width: 1.3px;
+    border-color: lightgray;
+    margin-left: 12px;
+}
+
+
+
+
 
 
 

@@ -17,6 +17,7 @@ a {
 body {
     font-family: roboto, sans-serif;
     margin: 0px;
+
 }
 
 a {
@@ -91,7 +92,7 @@ a {
     top: 0px;
     z-index: -1;
     left: 0px;
-    filter: brightness(0.7)
+    filter: brightness(0.9)
 }
 
 .weather {
@@ -260,7 +261,7 @@ a {
 .navigation-card {
     margin: auto;
     width: 100%;
-    background-color: white;
+
 }
 
 .navigation-card > a > div > h4 {

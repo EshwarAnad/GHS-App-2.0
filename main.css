@@ -261,6 +261,7 @@ a {
 .navigation-card {
     margin: auto;
     width: 100%;
+    transition: 0.5s ease;
 
 }
 
@@ -294,6 +295,7 @@ a {
     font-size: 14px;
     margin-top: 15px;
     line-height: 23px;
+    transition: .3s ease;
 }
 
 .card-btns {

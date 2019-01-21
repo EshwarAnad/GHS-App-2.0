@@ -292,7 +292,7 @@ a {
     ;
     font-size: 14px;
     margin-top: 15px;
-    line-height: 19px;
+    line-height: 23px;
 }
 
 .card-btns {
@@ -358,8 +358,17 @@ card-btns > button > a {
 }
 
 
+.p-plus > span {
+    display: none;
+}
 
-
+.p-plus > button {
+    background-color: white;
+    border: none;
+    color: #012395;
+    margin-top: 13px;
+    margin-left: -5px;
+}
 
 
 
@@ -374,6 +383,9 @@ card-btns > button > a {
 
 .ad-unit {}
 
+.less-btn {
+    display: none;
+}
 
 .button-items > button {
     width: 65px;
@@ -799,5 +811,5 @@ card-btns > button > a {
     position: fixed;
     width: 100%;
     top: 92px;
-    z-index: 50;
+    z-index: 35;
 }

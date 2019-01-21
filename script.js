@@ -69,6 +69,18 @@
       document.getElementsByClassName("calendar")[0].style.display = "none";
   }
 
+  function viewmore() {
+      document.getElementsByClassName("more")[0].style.display = "block";
+      document.getElementsByClassName("less-btn")[0].style.display = "block";
+      document.getElementsByClassName("more-btn")[0].style.display = "none";
+  }
+
+  function viewless() {
+      document.getElementsByClassName("more")[0].style.display = "none";
+      document.getElementsByClassName("less-btn")[0].style.display = "none";
+      document.getElementsByClassName("more-btn")[0].style.display = "block";
+  }
+
 
   function leftpress() {
       kahootsect[0].style.display = "none";

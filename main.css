@@ -197,6 +197,10 @@ a {
     margin: auto;
 
     z-index: 15;
+
+    border-bottom: solid;
+    border-bottom-width: 1.3px;
+    border-color: lightgray;
 }
 
 .top-navigation > button {

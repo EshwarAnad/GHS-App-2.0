@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 65 55">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Home_Activate);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #012395;
+      }
+
+      .cls-4 {
+        font-size: 12px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Home_Activate">
+      <rect width="65" height="55"/>
+    </clipPath>
+  </defs>
+  <g id="Home_Activate" data-name="Home Activate" class="cls-1">
+    <rect class="cls-5" width="65" height="55"/>
+    <g id="Group_425" data-name="Group 425" transform="translate(-144 -589)">
+      <g id="Group_4092" data-name="Group 4092">
+        <g id="outline-home-24px" transform="translate(167.5 601)">
+          <path id="Path_5" data-name="Path 5" class="cls-2" d="M0,0H17V17H0Z"/>
+          <path id="Path_6" data-name="Path 6" class="cls-3" d="M12.288,5.049l5.436,4.892v8.491H15.55V11.909H9.027v6.523H6.852V9.942l5.436-4.892m0-2.924L1.417,11.909H4.678v8.7H11.2V14.084h2.174v6.523H19.9v-8.7H23.16Z" transform="translate(-3.243 -2)"/>
+        </g>
+      </g>
+      <text id="Home" class="cls-4" transform="translate(160 621)"><tspan x="0" y="11">Home</tspan></text>
+    </g>
+  </g>
+</svg>

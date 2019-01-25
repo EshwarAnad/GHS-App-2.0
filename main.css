@@ -367,7 +367,7 @@ card-btns > button > a {
 }
 
 .p-plus > button {
-    background-color: white;
+    background-color: transparent;
     border: none;
     color: #012395;
     margin-top: 13px;
@@ -543,6 +543,7 @@ card-btns > button > a {
     border-width: 1.3px;
     border-color: lightgray;
     margin-left: 12px;
+    border-radius: 5px;
 }
 
 

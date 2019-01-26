@@ -27,17 +27,17 @@
 
 <body id="body">
 
-    <style>.top-navigation{background-color: black;} .material-icons{color: white;} .bottom-navigation{background-color: black;}body {background-color: black;} .navigation-card > h3{color: white;} .navigation-card > p {color: #E4E4E4;} .rounded-btn > button {background-color: black;color: white;} .horizontal-nav{background-color: black;} .button-wrapper > button:focus {color: white;} .line-indicator {background-color: white;} .p-plus > button {color: white;text-decoration: underline;} .bottom-navigation {border-color: transparent} .hamburger-menu {background-color: #1D1D1D;} .options-sect > button > h3{color:white} .options-sect > button > p {color: lightgray;} .admiral-ad > a > img {border: none;} .card-divider {background-color: white; opacity: 0.9}</style>
+    <style>.top-navigation{background-color: black;} .material-icons{color: white;} .bottom-navigation{background-color: black;}body {background-color: black;} .navigation-card > h3{color: white;} .navigation-card > p {color: #E4E4E4;} .rounded-btn > button {background-color: black;color: white;} .horizontal-nav{background-color: black;} .button-wrapper > button:focus {color: white;} .line-indicator {background-color: white;} .p-plus > button {color: white;text-decoration: underline;} .bottom-navigation {} .hamburger-menu {background-color: #1D1D1D;} .options-sect > button > h3{color:white} .options-sect > button > p {color: lightgray;} .admiral-ad > a > img {border: none;} .card-divider {background-color: white; opacity: 0.9}.menu-button > button{background-color:black; border: solid;border-width: 1.2px;border-color: white;}</style>
 
 
-    <button class="close" onclick="collapse()"></button>
+
 
     <div class="hamburger-menu vivify fadeInRight duration-500">
 
 
 
         <div class="top-nav">
-            <button onclick="collapse()"><i class="material-icons" id="search">close</i></button>
+
             <h3>GHS App</h3>
             <img src="Images/GHS%20Menu.svg">
             <div class="weather">
@@ -106,7 +106,7 @@
         <button class="menu" onclick="expand()"><i class="material-icons" id="menu">menu</i></button>
     </div>
 
-
+    <div class="menu-button"><button onclick="expand()"><img src="Assets/Menu%20Button.svg"></button><button class="close vivify fadeIn" onclick="collapse()"><i class="material-icons" id="search">close</i></button></div>
 
 
     <div class="bottom-navigation">
@@ -115,7 +115,7 @@
 
             <button onclick="homepress()"><img id="home" src="Assets/Home%20Dark.svg"></button>
 
-            <button onclick="searchopen()"><img id="home" src="Assets/Search%20Dark.svg"></button>
+            <button style="margin-left: 50px;" onclick="searchopen()"><img id="home" src="Assets/Search%20Dark.svg"></button>
 
             <button onclick="rightpress()"><img id="rightbtn" src="Assets/Athletics%20Dark.svg"></button>
 
@@ -196,6 +196,7 @@
                 </div>
             </a>
 
+            <span class="likebtn-wrapper" data-identifier="item_1"></span>
 
 
             <div class="rounded-btn-wrapper" style="margin-bottom: 77px;"> <a href="index.html" class="rounded-btn"><button>Return Now</button></a><a target="_blank" href="Darkmode.html" class="rounded-btn"><button>Add To Home Screen</button></a>

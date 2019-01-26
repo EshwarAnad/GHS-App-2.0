@@ -99,11 +99,15 @@ a {
     font-size: 14px;
     font-weight: normal;
     margin-bottom: 3px;
+    text-align: left;
 }
+
+
 
 .options-sect {
     margin-left: 20px;
     margin-top: 33px;
+
 }
 
 .options-sect > button {
@@ -123,6 +127,7 @@ a {
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: -2px;
+    text-align: left;
 }
 
 .dark-sect > h3 {

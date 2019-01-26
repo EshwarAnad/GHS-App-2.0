@@ -27,12 +27,12 @@
 
 <body id="body">
 
-    <style>.top-navigation{background-color: black;} .material-icons{color: white;} .bottom-navigation{background-color: black;}body {background-color: black;} .navigation-card > h3{color: white;} .navigation-card > p {color: #E4E4E4;} .rounded-btn > button {background-color: black;color: white;} .horizontal-nav{background-color: black;} .button-wrapper > button:focus {color: white;} .line-indicator {background-color: white;} .p-plus > button {color: white;text-decoration: underline;} .bottom-navigation {} .hamburger-menu {background-color: #1D1D1D;} .options-sect > button > h3{color:white} .options-sect > button > p {color: lightgray;} .admiral-ad > a > img {border: none;} .card-divider {background-color: white; opacity: 0.9}.menu-button > button{background-color:black; border: solid;border-width: 1.2px;border-color: white;}</style>
+    <style>.top-navigation{background-color: black;} .material-icons{color: white;} .bottom-navigation{background-color: black;}body {background-color: black;} .navigation-card > h3{color: white;} .navigation-card > p {color: #E4E4E4;} .rounded-btn > button {background-color: black;color: white;} .horizontal-nav{background-color: black;} .button-wrapper > button:focus {color: white;} .line-indicator {background-color: white;} .p-plus > button {color: white;text-decoration: underline;} .bottom-navigation {} .hamburger-menu {background-color: black;} .options-sect > button > h3{color:white} .options-sect > button > p {color: lightgray;} .admiral-ad > a > img {border: none;} .card-divider {background-color: white; opacity: 0.9}.menu-button > button{background-color:black; border: solid;border-width: 1.2px;border-color: white;}</style>
 
 
 
 
-    <div class="hamburger-menu vivify fadeInRight duration-500">
+    <div class="hamburger-menu vivify fadeInBottom duration-300 ">
 
 
 
@@ -40,42 +40,19 @@
 
             <h3>GHS App</h3>
             <img src="Images/GHS%20Menu.svg">
-            <div class="weather">
+            <div class="weather vivify popIn delay-400">
                 <script type='text/javascript' src='https://darksky.net/widget/default-small/30.3674,-89.0928/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=ffffff&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Sans-Serif&customFont=&units=us'></script>
             </div>
         </div>
 
         <div class="options">
-            <div class="options-sect" onclick="grades()">
-                <button>
-                    <h3>Check My Grades</h3>
-                    <p>Powered By Chalkable</p>
-                </button>
-
-            </div>
 
 
 
 
-            <div class="options-sect" onclick="mealmenu()">
-                <button onclick="meal()">
-                    <h3>Meal Menu</h3>
-                    <p>January - 2019</p>
-                </button>
-
-            </div>
 
 
-            <div class="card-divider" style="margin-bottom: -21px;"></div>
 
-
-            <div class="options-sect" onclick="admiral()">
-                <button>
-                    <h3>Admiral Naion</h3>
-                    <p>AdmiralNation.com</p>
-                </button>
-
-            </div>
 
 
 
@@ -86,6 +63,34 @@
                 </button>
 
             </div>
+
+
+            <div class="options-sect" onclick="admiral()">
+                <button>
+                    <h3>Admiral Naion</h3>
+                    <p>AdmiralNation.com</p>
+                </button>
+
+            </div>
+
+            <div class="card-divider" style="margin-bottom: -26px;"></div>
+
+            <div class="options-sect" onclick="grades()">
+                <button>
+                    <h3>Check My Grades</h3>
+                    <p>Powered By Chalkable</p>
+                </button>
+
+            </div>
+
+            <div class="options-sect" onclick="mealmenu()">
+                <button onclick="meal()">
+                    <h3>Meal Menu</h3>
+                    <p>January - 2019</p>
+                </button>
+
+            </div>
+
 
 
         </div>
@@ -100,10 +105,10 @@
 
 
 
+
     <div class="top-navigation">
 
-        <div class="logo-wrapper"> <img class="logo" src="Branding/Main%20Logo.svg"></div>
-        <button class="menu" onclick="expand()"><i class="material-icons" id="menu">menu</i></button>
+        <h1>Home</h1>
     </div>
 
     <div class="menu-button"><button onclick="expand()"><img src="Assets/Menu%20Button.svg"></button><button class="close vivify fadeIn" onclick="collapse()"><i class="material-icons" id="search">close</i></button></div>
@@ -125,12 +130,7 @@
         </div>
     </div>
 
-    <div class="spacer" id="top"></div>
-
-    <div class="card-divider" style="margin-top: 1px;"></div>
-
     <div class="homescreen">
-
 
 
         <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
@@ -145,7 +145,7 @@
             </a>
 
             <img class="card-img" style="height:185px;" src="Images/grades.jpeg">
-            <p>Click the menu button at the top right.</p>
+            <p>Tap the G button at the top right.</p>
 
             <div class="card-btns">
 
@@ -187,11 +187,11 @@
 
         <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
 
-            <h3 class="darkmode" style="margin-left: 23px;">Leave Dark Mode
+            <h3 class="darkmode" style="margin-left: 23px;">Try Dark New Dark Mode | Beta
             </h3>
             <a href="#">
                 <div>
-                    <h4 class="darkmode" style="margin-left: 23px">GHS App
+                    <h4 class="darkmode" style="margin-left: 23px">Experimental
                     </h4>
                 </div>
             </a>
@@ -199,7 +199,7 @@
             <span class="likebtn-wrapper" data-identifier="item_1"></span>
 
 
-            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;"> <a href="index.html" class="rounded-btn"><button>Return Now</button></a><a target="_blank" href="Darkmode.html" class="rounded-btn"><button>Add To Home Screen</button></a>
+            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px; "> <a href="Darkmode.html" class="rounded-btn"><button>Try Now</button></a>
 
             </div>
 
@@ -250,7 +250,7 @@
                 <marquee class="admiral-ad"><a href="https://admiralnation.github.io/SHOP/hats_beanie.html"><img src="ShopItems/Beanie%20Thumbnail.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_gucci1.html"><img src="ShopItems/Gucci%20Thumbnail1.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_longsleevetshirt.html"><img src="ShopItems/Long%20sleeve%20T-Shirt1%20Thumbnail.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_zippullover.html"><img src="ShopItems/Quarter%20Zip%20Thumbnail.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_tshirt1.html"><img src="ShopItems/T-Shirt1%20Thumbnail.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_rainjacketwindbreaker.html"><img src="ShopItems/Windbreaker%20Thumbnail.jpg"></a>
                 </marquee>
             </div>
-            <p style="margin-top: 50px;">Click the menu at the top right or visit Admiralnation.com</p>
+            <p style="margin-top: 50px;">Tap the G button or visit Admiralnation.com</p>
 
             <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px;"> <a href="https://admiralnation.github.io/SHOP/All.html" class="rounded-btn"><button>Vist Site</button></a>
 
@@ -316,7 +316,7 @@
 
         </div>
 
-        <div class="video-sect">
+        <div class="video-sect" style="margin-top: 73px;">
             <div class="indicator-container">
                 <div class="indicator">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
@@ -436,7 +436,7 @@
 
 
 
-        <div class="live-sect vivify fadeIn">
+        <div class="live-sect vivify fadeIn" style="margin-top: 41px;">
 
             <div class="indicator-container">
                 <div class="indicator" style="width: 0px;">
@@ -506,7 +506,7 @@
                     <div class="line-indicator vivify pullLeft duration-500"></div>
                 </div>
             </div>
-            <div class="navigation-card cd1 vivify fadeIn delay-100 " style="margin-top: -55px;" data-aos="fade-up">
+            <div class="navigation-card cd1 vivify fadeIn delay-100 " style="margin-top: -94px;" data-aos="fade-up">
 
                 <img class="card-icon" src="https://lh3.googleusercontent.com/Zazb-lbXIl-yginoG0rb5PfG3Ptc3Rh9rYspjg5ieHxbAm53w1OplF-ES4RNi8EQ4yg=s180-rw">
 
@@ -576,7 +576,7 @@
 
 
 
-    <div class="grades-sect">
+    <div class="grades-sect vivify fadeIn">
         <iframe src="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx"></iframe>
     </div>
 
@@ -585,10 +585,12 @@
 
 
 
-    <div class="admiralnation-sect">
-        <div class="menu-cover"></div>
+    <div class="admiralnation-sect vivify fadeIn">
+
         <iframe src="https://admiralnation.github.io/SHOP/All.html" autofocus></iframe>
     </div>
+
+
 
 
 

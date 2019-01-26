@@ -5,16 +5,11 @@
         clip-path: url(#clip-Athletics_Dark);
       }
 
-      .cls-2, .cls-3 {
+      .cls-2 {
         fill: #fff;
       }
 
       .cls-3 {
-        font-size: 12px;
-        font-family: Roboto-Regular, Roboto;
-      }
-
-      .cls-4 {
         fill: rgba(255,255,255,0);
       }
     </style>
@@ -23,10 +18,9 @@
     </clipPath>
   </defs>
   <g id="Athletics_Dark" data-name="Athletics Dark" class="cls-1">
-    <rect class="cls-4" width="65" height="55"/>
-    <g id="Group_283" data-name="Group 283" transform="translate(-286 1)">
+    <rect class="cls-3" width="65" height="55"/>
+    <g id="Group_283" data-name="Group 283" transform="translate(-286 7)">
       <path id="ic_fitness_center_24px" class="cls-2" d="M19.105,13.846l1.317-1.317-1.317-1.317L15.817,14.5,7.923,6.606l3.288-3.288L9.894,2,8.577,3.317,7.26,2,5.288,3.971,3.971,2.654,2.654,3.971,3.971,5.288,2,7.26,3.317,8.577,2,9.894l1.317,1.317L6.606,7.923,14.5,15.817l-3.288,3.288,1.317,1.317,1.317-1.317,1.317,1.317,1.971-1.971,1.317,1.317,1.317-1.317-1.317-1.317,1.971-1.971Z" transform="translate(307 9)"/>
-      <text id="Athletics" class="cls-3" transform="translate(298 30)"><tspan x="0" y="11">Athletic</tspan></text>
     </g>
   </g>
 </svg>

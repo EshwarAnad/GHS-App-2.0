@@ -12,7 +12,7 @@
     <link rel="manifest" href="manifest.json">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="shortcut icon" href="Assets/ios_app_icon_blw_icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-startup-image" href="Assets/IOS%20Splashscreen.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -30,9 +30,7 @@
 
 
 
-
-
-    <div class="hamburger-menu vivify fadeInBottom duration-500">
+    <div class="hamburger-menu vivify fadeInRight duration-500">
 
 
 
@@ -100,18 +98,19 @@
 
 
 
+    <div class="top-navigation">
 
 
+    </div>
 
     <div class="menu-button"><button onclick="expand()"><img src="Assets/Menu%20Button.svg"></button><button class="close vivify fadeIn" onclick="collapse()"><i class="material-icons" id="search">close</i></button></div>
+
 
     <div class="bottom-navigation">
         <div class="button-items">
             <button onclick="leftpress()"><img id="leftbtn" src="Assets/Media.svg"></button>
 
             <button onclick="homepress()"><img id="home" src="Assets/Home.svg"></button>
-
-
 
             <button style="margin-left: 50px;" onclick="searchopen()"><img id="home" src="Assets/Search.svg"></button>
 
@@ -128,7 +127,6 @@
 
 
     <div class="homescreen">
-
 
 
         <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
@@ -185,13 +183,37 @@
 
         <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
 
+            <h3 class="darkmode" style="margin-left: 23px;">Leave Dark Mode
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode" style="margin-left: 23px">GHS App
+                    </h4>
+                </div>
+            </a>
+
+            <span class="likebtn-wrapper" data-identifier="item_1"></span>
+
+
+            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;"> <a href="index.html" class="rounded-btn"><button>Return Now</button></a><a target="_blank" href="Darkmode.html" class="rounded-btn"><button>Add To Home Screen</button></a>
+
+            </div>
+
+        </div>
+
+
+        <div class="card-divider"></div>
+
+
+
+        <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
+
             <h3 class="darkmode" style="margin-left: 23px;">Add To Home Screen | IPhone
             </h3>
             <a href="#">
                 <div>
                     <h4 class="darkmode" style="margin-left: 23px">GHS App - Help
                     </h4>
-
                 </div>
             </a>
 
@@ -203,32 +225,6 @@
 
 
             </div>
-        </div>
-
-
-        <div class="card-divider"></div>
-
-
-
-        <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
-
-            <h3 class="darkmode" style="margin-left: 23px;">Try The GHS App Dark Mode | Beta
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 class="darkmode" style="margin-left: 23px">Experimental
-                    </h4>
-                </div>
-            </a>
-
-            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px;"> <a href="Darkmode.html" class="rounded-btn"><button>Try Now</button></a>
-
-            </div>
-
-
-
-
-
         </div>
 
 
@@ -316,7 +312,7 @@
 
         </div>
 
-        <div class="video-sect">
+        <div class="video-sect" style="margin-top: 73px;">
             <div class="indicator-container">
                 <div class="indicator">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
@@ -436,7 +432,7 @@
 
 
 
-        <div class="live-sect vivify fadeIn">
+        <div class="live-sect vivify fadeIn" style="margin-top: 41px;">
 
             <div class="indicator-container">
                 <div class="indicator" style="width: 0px;">
@@ -483,6 +479,10 @@
 
 
     <div class="athletic-sect">
+
+        <div class="page-indicator">
+            <h3>Athletics</h3>
+        </div>
 
         <div class="horizontal-nav">
             <div class="button-wrapper" style="width: 164px;"><button id="btn-schedule" onclick="schedule()">Schedule</button><button style="width: 84px;" onclick="site()">Athletic App</button></div>
@@ -725,7 +725,7 @@
 
     <div class="kahoot-sect vivify fadeIn delay-300"><iframe src="https://kahoot.it/"></iframe></div>
 
-    <div style="height: 88px;" class="spacer"></div>
+
 
     <script src="script.js">
 

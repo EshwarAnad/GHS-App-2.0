@@ -177,6 +177,7 @@
       searchsect[0].style.display = "none";
       document.getElementById("btn-lunch").focus();
       admiralnationsect[0].style.display = "none";
+      close[0].style.display = "none";
   }
 
   function searchopen() {

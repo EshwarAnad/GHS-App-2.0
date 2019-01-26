@@ -3,17 +3,17 @@
     "name": "GHS App",
     "icons": [
         {
-            "src": "Branding/192px%20logo.png",
+            "src": "Branding/192px%20logo%20dark.png",
             "type": "image/png",
             "sizes": "192x192"
     }
         , {
-            "src": "Branding/512px%20logo.png",
+            "src": "Branding/512px%20logo%20dark.png",
             "type": "image/png",
             "sizes": "512x512"
     }
   ],
-    "start_url": "index.html",
+    "start_url": "Darkmode.html",
     "background_color": "#000000",
     "display": "standalone",
     "scope": "Darkmode.html",

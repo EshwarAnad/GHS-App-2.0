@@ -108,7 +108,7 @@
 
     </div>
 
-    <div class="menu-button"><button onclick="expand()"><img src="Assets/Menu%20Button.svg"></button><button class="close vivify fadeIn" onclick="collapse()"><i style="color: white" class="material-icons" id="search">close</i></button></div>
+    <div class="menu-button"><button onclick="expand()" class="vivify popIn delay-850"><img src="Assets/Menu%20Button.svg"></button><button style="color: black;" class="close vivify popIn" onclick="collapse()"><i class="material-icons" id="search">close</i></button></div>
 
 
     <div class="bottom-navigation">
@@ -119,7 +119,7 @@
 
             <button style="margin-left: 50px;" onclick="searchopen()"><img id="home" src="Assets/Search.svg"></button>
 
-            <button onclick="rightpress()"><img id="rightbtn" src="Assets/G%20Logo%20BTN.svg"></button>
+            <button onclick="rightpress()"><img id="rightbtn" src="Assets/Athletics.svg"></button>
 
 
 
@@ -132,6 +132,46 @@
 
 
     <div class="homescreen">
+
+        <div class="page-indicator">
+            <h3>GHS App <span>Beta </span></h3>
+        </div>
+
+
+        <div class="card-divider"></div>
+
+
+
+        <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
+
+            <h3 class="darkmode" style="margin-left: 23px;">Shop Admiral Nation On GHS App
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode" style="margin-left: 23px">Admiral Nation
+                    </h4>
+                </div>
+            </a>
+
+            <div class="card-img">
+                <div class="admiral-ad"><a href="https://admiralnation.github.io/SHOP/tops_gucci1.html"><img src="ShopItems/Gucci%20Thumbnail1.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_zippullover.html"><img src="ShopItems/Quarter%20Zip%20Thumbnail.jpg"></a></div>
+
+            </div>
+            <p style="margin-top: 50px;">Tap the G button or visit Admiralnation.com</p>
+
+            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px;"><a href="#" class="rounded-btn"><button onclick="admiral()">View In App</button></a>
+
+            </div>
+
+            <div class="card-btns">
+
+
+
+            </div>
+        </div>
+
+
+        <div class="card-divider"></div>
 
 
         <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
@@ -154,6 +194,8 @@
 
             </div>
         </div>
+
+
 
         <div class="card-divider"></div>
 
@@ -233,38 +275,6 @@
         </div>
 
 
-        <div class="card-divider"></div>
-
-
-        <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
-
-            <h3 class="darkmode" style="margin-left: 23px;">Shop Admiral Nation On GHS App
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 class="darkmode" style="margin-left: 23px">GHS App
-                    </h4>
-                </div>
-            </a>
-
-            <div class="card-img">
-                <marquee class="admiral-ad"><a href="https://admiralnation.github.io/SHOP/hats_beanie.html"><img src="ShopItems/Beanie%20Thumbnail.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_gucci1.html"><img src="ShopItems/Gucci%20Thumbnail1.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_longsleevetshirt.html"><img src="ShopItems/Long%20sleeve%20T-Shirt1%20Thumbnail.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_zippullover.html"><img src="ShopItems/Quarter%20Zip%20Thumbnail.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_tshirt1.html"><img src="ShopItems/T-Shirt1%20Thumbnail.jpg"></a><a href="https://admiralnation.github.io/SHOP/tops_rainjacketwindbreaker.html"><img src="ShopItems/Windbreaker%20Thumbnail.jpg"></a>
-                </marquee>
-            </div>
-            <p style="margin-top: 50px;">Tap the G button or visit Admiralnation.com</p>
-
-            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px;"> <a href="https://admiralnation.github.io/SHOP/All.html" class="rounded-btn"><button>Vist Site</button></a>
-
-            </div>
-
-            <div class="card-btns">
-
-
-
-            </div>
-        </div>
-
-
 
 
 
@@ -317,7 +327,7 @@
 
         </div>
 
-        <div class="video-sect" style="margin-top: 73px;">
+        <div class="video-sect" style="margin-top: 73px;margin-bottom: 50px;">
             <div class="indicator-container">
                 <div class="indicator">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
@@ -431,6 +441,8 @@
 
                 </div>
             </div>
+
+            <div class="spacer" style="height: 15px;"></div>
         </div>
 
 
@@ -734,7 +746,6 @@
     </script>
     <script>
         AOS.init();
-
     </script>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -746,7 +757,6 @@
                 });
             });
         });
-
     </script>
     <script src="sw.js"></script>
     <script src="Service-Worker.js"></script>
@@ -770,7 +780,6 @@
                 };
             }
         })();
-
     </script>
 </body>
 

@@ -432,8 +432,8 @@ card-btns > button > a {
 
 .menu-button > button {
     position: fixed;
-    left: 50%;
-    bottom: -2.5%;
+    left: 41%;
+    bottom: 1.9%;
     transform: translate(-50%, -50%);
     z-index: 100;
 
@@ -443,7 +443,8 @@ card-btns > button > a {
 
     border-radius: 50px;
     box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.4);
-    background-color: #012395;
+    background-color: white;
+
 }
 
 .menu-button > button:focus {
@@ -465,7 +466,7 @@ card-btns > button > a {
 
 .horizontal-nav {
     width: 100%;
-    height: 57px;
+    height: 51px;
     background-color: white;
     position: fixed;
     top: 0px;
@@ -568,7 +569,10 @@ card-btns > button > a {
     border-radius: 5px;
 }
 
-
+.admiral-ad {
+    margin: auto;
+    width: 343px;
+}
 
 
 
@@ -841,17 +845,31 @@ card-btns > button > a {
 }
 
 .page-indicator {
-    position: fixed;
-    top: 5px;
-    left: 23px;
-    z-index: 15;
+
+    width: 100%;
+    background-color: white;
+    height: 53px;
+    z-index: 30;
+    margin-top: 0px;
+    margin-bottom: -37px;
+
 }
 
 .page-indicator > h3 {
     font-size: 15px;
     ;
     font-weight: normal;
-    ;
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+
+
+}
+
+.page-indicator > h3 > span {
+    font-size: 10px;
+    color: #000000;
+    opacity: 0.7
 }
 
 .line-indicator {
@@ -864,6 +882,6 @@ card-btns > button > a {
 .indicator-container {
     position: fixed;
     width: 100%;
-    top: 57px;
+    top: 51px;
     z-index: 10;
 }

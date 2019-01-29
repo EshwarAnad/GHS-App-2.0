@@ -47,7 +47,7 @@ a {
     height: 81%;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
     display: none;
-    border-radius: 15px 15px 1px 1px;
+
 
 }
 
@@ -812,14 +812,18 @@ card-btns > button > a {
     text-decoration: none;
     list-style-type: none;
     width: 272px;
-    padding-bottom: 13px;
-    padding-top: 13px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     padding-right: 0px;
     color: #012395;
+
 }
 
 .teacher-list > li > a {
     color: #012395;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
 }
 
 .menu-cover {

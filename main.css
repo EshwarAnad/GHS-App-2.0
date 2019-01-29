@@ -847,7 +847,7 @@ card-btns > button > a {
 .page-indicator {
 
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     height: 53px;
     z-index: 30;
     margin-top: 0px;

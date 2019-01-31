@@ -436,17 +436,17 @@ card-btns > button > a {
 }
 
 .menu-button {
-    position: fixed;
-    left: 50%;
-    bottom: -1.8%;
-    transform: translate(-50%, -50%);
+  
     z-index: 50;
 }
 
 .menu-button > button {
 
     z-index: 100;
-
+  position: fixed;
+    left: 41%;
+    bottom: 2.8%;
+    transform: translate(-50%, -50%);
     border: none;
     width: 62px;
     height: 62px;

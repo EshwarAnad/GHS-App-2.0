@@ -35,14 +35,7 @@
 
 
 
-        <div class="top-nav">
 
-            <h3>GHS App</h3>
-            <img src="Images/GHS%20Menu.svg">
-            <div class="weather vivify popIn delay-400">
-                <script type='text/javascript' src='https://darksky.net/widget/default-small/30.3674,-89.0928/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=ffffff&bgColor=transparent&transparency=true&skyColor=undefined&fontFamily=Sans-Serif&customFont=&units=us'></script>
-            </div>
-        </div>
 
         <div class="options">
 
@@ -50,10 +43,11 @@
 
 
 
+            <div class="options-sect" style="margin: auto;width: 64px;">
+                <img style="margin: auto;width: 54px;margin-top: 0px;margin-bottom: -10px;" src="Branding/512px%20logo.png">
 
-
-
-
+            </div>
+            <div class="card-divider" style="margin-bottom: -9px;margin-top: 4px"></div>
 
             <div class="options-sect" onclick="kahoot()">
                 <button>
@@ -63,7 +57,6 @@
 
             </div>
 
-
             <div class="options-sect" onclick="admiral()">
                 <button>
                     <h3>Admiral Nation</h3>
@@ -72,7 +65,6 @@
 
             </div>
 
-            <div class="card-divider" style="margin-bottom: -26px;"></div>
 
             <div class="options-sect" onclick="grades()">
                 <button>
@@ -81,6 +73,7 @@
                 </button>
 
             </div>
+
 
             <div class="options-sect" onclick="mealmenu()">
                 <button onclick="meal()">
@@ -159,6 +152,8 @@
         </div>
 
 
+
+
         <div class="card-divider"></div>
 
         <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
@@ -178,6 +173,28 @@
             <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px; "> <a href="http://www.act.org/" class="rounded-btn"><button>Act.org</button></a>
 
             </div>
+        </div>
+
+
+
+        <div class="card-divider"></div>
+
+        <div class="navigation-card cd1 vivify fadeIn delay-100 " data-aos="fade-up">
+
+            <h3 class="darkmode" style="margin-left: 23px;">Weather Forecast
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode" style="margin-left: 23px">Gulfport, MS
+                    </h4>
+                </div>
+            </a>
+
+            <a style="margin: auto; width: 340px;" class="weatherwidget-io" href="https://forecast7.com/en/30d37n89d09/gulfport/?unit=us" data-label_1="GULFPORT" data-label_2="WEATHER" data-theme="pure">GULFPORT WEATHER</a>
+            <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
         </div>
 
         <div class="card-divider"></div>
@@ -853,7 +870,6 @@
     </script>
     <script>
         AOS.init();
-
     </script>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -865,7 +881,6 @@
                 });
             });
         });
-
     </script>
     <script src="sw.js"></script>
     <script src="Service-Worker.js"></script>
@@ -889,7 +904,6 @@
                 };
             }
         })();
-
     </script>
 </body>
 

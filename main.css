@@ -436,14 +436,14 @@ card-btns > button > a {
 }
 
 .menu-button {
-  
+
     z-index: 50;
 }
 
 .menu-button > button {
 
     z-index: 100;
-  position: fixed;
+    position: fixed;
     left: 41%;
     bottom: 2.8%;
     transform: translate(-50%, -50%);
@@ -716,7 +716,7 @@ card-btns > button > a {
 .meal {
 
     position: absolute;
-    top: -179px;
+    top: -124px;
 
 }
 
@@ -898,4 +898,13 @@ card-btns > button > a {
     width: 100%;
     top: 51px;
     z-index: 10;
+}
+
+
+
+@media screen and (min-width:700px) {
+    body {
+        display: none;
+    }
+
 }

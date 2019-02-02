@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 360 192">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Hero_Img);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #012395;
+        font-size: 29px;
+        font-family: Roboto-Regular, Roboto;
+      }
+    </style>
+    <clipPath id="clip-Hero_Img">
+      <rect width="360" height="192"/>
+    </clipPath>
+  </defs>
+  <g id="Hero_Img" data-name="Hero Img" class="cls-1">
+    <rect class="cls-2" width="360" height="192"/>
+    <g id="Group_4094" data-name="Group 4094" transform="translate(-8 -19)">
+      <rect id="Rectangle_249" data-name="Rectangle 249" class="cls-2" width="360" height="192" transform="translate(8 19)"/>
+      <text id="Home" class="cls-3" transform="translate(113 95)"><tspan x="36.003" y="28">Home</tspan></text>
+    </g>
+  </g>
+</svg>

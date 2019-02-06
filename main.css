@@ -33,9 +33,9 @@ a {
 
 
 
+.header-base {width:100%; height:50px; background-color:white;position:fixed; top:0px;left:0px;z-index:40; }
 
-
-
+.header-base > h1 {font-size:14px;text-align:center;font-weight:normal; margin-top:15px; }
 
 .hamburger-menu {
     position: fixed;
@@ -103,7 +103,7 @@ a {
     font-size: 14px;
     font-weight: normal;
     margin-bottom: 3px;
-    text-align: center;
+    text-align: lef;
 }
 
 
@@ -168,6 +168,71 @@ a {
     font-weight: normal;
     font-size: 12px;
 }
+
+
+
+
+
+
+
+.filter {
+
+    border-radius: 50px;
+    width: 93px;
+    height: 22px;
+    float: right;
+    margin-top: 15px;
+
+    margin-right: 15px;
+}
+
+.filter:focus {
+    outline: none;
+}
+
+.filter-wrapper > h3 {
+    float: right;
+    width: 58px;
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: -18px;
+}
+
+.filter-wrapper > h1 {
+    float: left;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -4px;
+    margin-left: 21px;
+    margin-top: 17px;
+}
+
+.filter-wrapper {
+    width: 100%;
+    height: 52px;
+    float: right;
+    margin-right: 17px;
+    margin-top: 14px;
+    position: fixed;
+    background-color: white;
+    z-index: 30;
+    top: -14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

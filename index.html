@@ -51,7 +51,7 @@
 
 <body>
 
-    <header class="header" style="display: none;">
+    <header class="header" style="display:none;">
         <h1 class="header__title">Weather PWA</h1>
         <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
         <button id="butAdd" class="headerButton" aria-label="Add"></button>
@@ -1119,13 +1119,12 @@
         </div>
     </main>
 
-    <div class="dialog-container">
+    <div class="dialog-container" style="display:none">
         <div class="dialog">
             <div class="dialog-title">Add new city</div>
             <div class="dialog-body">
                 <select id="selectCityToAdd">
-                    <!-- Values map to Yahoo Weather API Where On Earth Identifiers (WOEIDs).
-               https://developer.yahoo.com/weather/documentation.html#req -->
+
                     <option value="2357536">Austin, TX</option>
                     <option value="2367105">Boston, MA</option>
                     <option value="2379574">Chicago, IL</option>
@@ -1135,20 +1134,20 @@
                     <option value="2490383">Seattle, WA</option>
                 </select>
             </div>
-            <div class="dialog-buttons">
+            <div class="dialog-buttons" style="display: none">
                 <button id="butAddCity" class="button">Add</button>
                 <button id="butAddCancel" class="button">Cancel</button>
             </div>
         </div>
     </div>
 
-    <div class="loader">
+    <div class="loader" style="display:none">
         <svg viewBox="0 0 32 32" width="32" height="32">
             <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
         </svg>
     </div>
 
-    <!-- Uncomment the line below when ready to test with fake data -->
+
     <script src="scripts/app.js" async></script>
 
 </body>

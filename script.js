@@ -82,6 +82,13 @@
   }
 
 
+
+
+
+
+
+
+
   function leftpress() {
       kahootsect[0].style.display = "none";
       homescreen[0].style.display = "none";
@@ -194,6 +201,24 @@
       admiralnationsect[0].style.display = "none";
       close[0].style.display = "none";
   }
+
+
+
+
+  function all() {
+      document.getElementsByClassName("event")[0].style.display = "block";
+      document.getElementsByClassName("test")[0].style.display = "block";
+      document.getElementsByClassName("promote")[0].style.display = "block";
+      document.getElementsByClassName("help")[0].style.display = "block";
+  }
+
+  function test() {
+      document.getElementsByClassName("event")[0].style.display = "none";
+      document.getElementsByClassName("test")[0].style.display = "block";
+      document.getElementsByClassName("promote")[0].style.display = "none";
+      document.getElementsByClassName("help")[0].style.display = "none";
+  }
+
 
 
 

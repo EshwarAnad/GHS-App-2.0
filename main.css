@@ -41,6 +41,7 @@ a {
     top: 0px;
     left: 0px;
     z-index: 40;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
 }
 
 .header-base > h1 {
@@ -72,16 +73,17 @@ a {
     overflow-x: scroll;
     height: 210;
     overflow-y: none;
-    white-space: nowrap
+    white-space: nowrap;
+
 }
 
 .swipe-menu > img {
     margin-left: 10px;
     border-radius: 6px;
     display: inline-block;
-    height: 200px;
+    height: 229px;
     object-fit: cover;
-    width: 125px;
+    width: 149px;
     border: solid;
     border-width: 1.3px;
     border-color: lightgray;

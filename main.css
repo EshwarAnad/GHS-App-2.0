@@ -616,7 +616,7 @@ card-btns > button > a {
 .button-wrapper > button:focus {
     color: #012395;
     outline: none;
-    font-weight: 600;
+
 }
 
 .button-wrapper {
@@ -1007,7 +1007,7 @@ card-btns > button > a {
 .line-indicator {
 
     width: 77px;
-    height: 1.5px;
+    height: 1.9px;
     background-color: #012395;
 }
 

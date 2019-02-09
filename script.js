@@ -92,7 +92,6 @@
   function leftpress() {
       kahootsect[0].style.display = "none";
       homescreen[0].style.display = "none";
-      topnavbar[0].style.boxShadow = "0px;";
       mediasect[0].style.display = "block";
       athleticsect[0].style.display = "none"
       gradessect[0].style.display = "none"

@@ -616,7 +616,7 @@ card-btns > button > a {
 .button-wrapper > button:focus {
     color: #012395;
     outline: none;
-
+    font-weight: bolder
 }
 
 .button-wrapper {

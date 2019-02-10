@@ -1052,7 +1052,7 @@ card-btns > button > a {
 }
 
 
-
+.close-btn > button {position: fixed; top: 20px; right: 20px; z-index: 56;border: none; background-color: transparent; color: #012395; }
 
 
 .search-sect {

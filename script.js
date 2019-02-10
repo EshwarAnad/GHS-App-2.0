@@ -224,7 +224,9 @@
       document.getElementsByClassName("univ-menu")[0].style.display = "none";
   }
 
-
+  function searchclose() {
+      searchsect[0].style.display = "none";
+  }
 
 
   function all() {

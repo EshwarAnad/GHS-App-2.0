@@ -30,11 +30,16 @@
 
   function expand() {
       hammenu[0].style.display = "block";
+
+      document.getElementsByClassName("menu-cover")[0].style.display = "block";
       close[0].style.display = "block";
+
   }
 
   function collapse() {
       hammenu[0].style.display = "none";
+
+      document.getElementsByClassName("menu-cover")[0].style.display = "none";
       close[0].style.display = "none";
   }
 
@@ -140,7 +145,9 @@
       mealmenu[0].style.display = "none";
       searchsect[0].style.display = "none";
       admiralnationsect[0].style.display = "none";
+      document.getElementsByClassName("menu-cover")[0].style.display = "none";
       close[0].style.display = "none";
+
   }
 
   function admiral() {
@@ -154,7 +161,9 @@
       mealmenu[0].style.display = "none";
       searchsect[0].style.display = "none";
       admiralnationsect[0].style.display = "block";
+      document.getElementsByClassName("menu-cover")[0].style.display = "none";
       close[0].style.display = "none";
+
   }
 
   function grades() {
@@ -169,6 +178,7 @@
       searchsect[0].style.display = "none";
       admiralnationsect[0].style.display = "none";
       close[0].style.display = "none";
+      document.getElementsByClassName("menu-cover")[0].style.display = "none";
   }
 
   function meal() {
@@ -183,7 +193,9 @@
       searchsect[0].style.display = "none";
       document.getElementById("btn-lunch").focus();
       admiralnationsect[0].style.display = "none";
+      document.getElementsByClassName("menu-cover")[0].style.display = "none";
       close[0].style.display = "none";
+
   }
 
   function searchopen() {

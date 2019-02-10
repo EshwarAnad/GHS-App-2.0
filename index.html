@@ -34,9 +34,12 @@
 </head>
 
 <body>
+    <button class="menu-cover" onclick="collapse()">
+
+    </button>
 
 
-    <div class="hamburger-menu vivify fadeInBottom duration-300 " style="height: 484px;">
+    <div class="hamburger-menu vivify fadeInBottom duration-300 ">
 
 
 
@@ -46,34 +49,18 @@
 
 
 
+            <h4>GHS App</h4>
+            <p>Quick Menu</p>
 
+            <button onclick="collapse()"><i class="material-icons">close</i></button>
 
-
-
-
-            <div class="options-sect" onclick="kahoot()">
-                <button>
-                    <h3>Play Kahoot!</h3>
-                    <p>Kahoot.it</p>
-                </button>
-
-            </div>
-
-
-
-            <div class="options-sect" onclick="admiral()">
-                <button>
-                    <h3>Shop School Store</h3>
-                    <p>AdmiralNation.com</p>
-                </button>
-
-            </div>
 
             <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx">
                 <div class="options-sect" onclick="grades()">
                     <button>
+                        <i class="material-icons menu-icon">school</i>
                         <h3>Check My Grades</h3>
-                        <p>Powered By Chalkable</p>
+
                     </button>
 
                 </div>
@@ -83,24 +70,59 @@
 
             <div class="options-sect" onclick="mealmenu()">
                 <button onclick="meal()">
+                    <i class="menu-icon material-icons">
+
+                        restaurant</i>
                     <h3>Meal Menu</h3>
-                    <p>February</p>
+
                 </button>
 
             </div>
 
+
+            <div class="options-sect" onclick="kahoot()">
+                <button>
+                    <i class="menu-icon material-icons">
+                        gamepad</i>
+                    <h3>Play Kahoot!</h3>
+
+                </button>
+
+            </div>
+
+
+
+            <div class="options-sect" onclick="admiral()">
+                <button>
+                    <i class="menu-icon material-icons">
+
+                        shopping_cart</i>
+                    <h3>Shop School Store</h3>
+
+                </button>
+
+            </div>
+
+
+
+
+
+
+
+
+
             <a href="https://payments.efundsforschools.com/v3/districts/56099" target="_blank">
                 <div class="options-sect">
                     <button>
+                        <i class="material-icons menu-icon">credit_card</i>
                         <h3>Pay Fees/Lunch</h3>
-                        <p>E-Funds for schools</p>
+
                     </button>
 
                 </div>
             </a>
 
         </div>
-
 
 
     </div>
@@ -110,8 +132,8 @@
 
 
 
-    <div class="menu-button"><button onclick="expand()" class="vivify popInBottom delay-500 "><i style="font-size: 36px;color: #012395;" class="material-icons">
-                keyboard_arrow_up</i></button><button style="color: black;" class="close vivify popIn" onclick="collapse()"><i class="material-icons" style="font-size: 36px;color: #012395;" id="search">keyboard_arrow_down</i></button></div>
+    <div class="menu-button"><button onclick="expand()" class="vivify"><i style="font-size: 28px;color: #012395;" class="material-icons">
+                keyboard_arrow_up</i></button></div>
 
 
     <div class="bottom-navigation">

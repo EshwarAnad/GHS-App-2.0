@@ -624,8 +624,9 @@ card-btns > button > a {
 
     z-index: 35;
     position: fixed;
-    bottom: 19px;
-    right: 15px;
+    left: 50%;
+    bottom: -1.6%;
+    transform: translate(-50%, -50%);
     border: none;
     width: 128px;
     height: 57px;

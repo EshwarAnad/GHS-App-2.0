@@ -1055,12 +1055,14 @@ card-btns > button > a {
 
 .close-btn > button {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 3px;
+    right: -1px;
     z-index: 56;
     border: none;
     background-color: transparent;
     color: #012395;
+    width: 96px;
+    height: 49px;
 }
 
 

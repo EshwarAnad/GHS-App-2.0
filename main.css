@@ -652,6 +652,7 @@ card-btns > button > a {
     float: left;
     margin-left: 17px;
     color: #012395;
+	font-size: 13px;
 }
 
 .search-link {

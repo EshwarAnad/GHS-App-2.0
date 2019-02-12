@@ -31,11 +31,7 @@
 
   gtag('config', 'UA-122866044-3');
 </script>
-    <!-- load images the lazy way -->
-    <img class="lazy" data-src="path/to/image.jpg" />
 
-    <!-- load background images of other element types -->
-    <div class="lazy" data-src="path/to/image.jpg"></div>
 </head>
 
 <body>
@@ -105,7 +101,7 @@
 
 
 
-                <div class="options-sect" onclick="mealmenu()">
+                <div class="options-sect">
                     <button onclick="meal()">
                         <i class="menu-icon material-icons">
 
@@ -129,8 +125,8 @@
 
 
 
-                <div class="options-sect" onclick="admiral()">
-                    <button>
+                <div class="options-sect">
+                    <button onclick="admiral()">
                         <i class="menu-icon material-icons">
 
                             shopping_cart</i>
@@ -763,7 +759,7 @@
 
         </div>
 
-        <div class="video-sect" style="margin-top: 73px;margin-bottom: 50px;">
+        <div class="video-sect" style="">
             <div class="indicator-container">
                 <div class="indicator">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
@@ -1016,6 +1012,7 @@
 
     </div>
 
+    s
 
 
 
@@ -1024,15 +1021,14 @@
 
 
 
+<div class="admiralnation-sect vivify fadeIn">
 
-    <div class="admiralnation-sect vivify fadeIn">
-
-        <iframe src="https://admiralnation.github.io/SHOP/All.html" autofocus></iframe>
-    </div>
-
+    <iframe src="https://admiralnation.github.io/SHOP/All.html" autofocus></iframe>
+</div>
 
 
 
+    <div class="kahoot-sect vivify fadeIn delay-300"><iframe src="https://kahoot.it/"></iframe></div>
 
 
 
@@ -1164,7 +1160,6 @@
 
 
 
-    <div class="kahoot-sect vivify fadeIn delay-300"><iframe src="https://kahoot.it/"></iframe></div>
 
 
 
@@ -1174,7 +1169,6 @@
     </script>
     <script>
         AOS.init();
-
     </script>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1186,7 +1180,6 @@
                 });
             });
         });
-
     </script>
     <script src="sw.js"></script>
     <script src="Service-Worker.js"></script>
@@ -1200,7 +1193,6 @@
                 }
             }
         }, false)
-
     </script>
 </body>
 

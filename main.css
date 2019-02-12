@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 .back-btn {
     width: 15px;
     float: left;

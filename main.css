@@ -1236,7 +1236,7 @@ card-btns > button > a {
     z-index: 10;
 }
 
-
+.mini-text {font-size: 10px; font-weight: normal;width: 100%; text-align: center;margin-top: -10px; margin-bottom: -9px;color: #3E3E3E}
 
 @media screen and (min-width:1000px) {
     body {

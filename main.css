@@ -28,7 +28,7 @@ html {
     scroll-behavior: smooth
 }
 
-.holiday {position:fixed; bottom: 415px; left:0px;; z-index:53;width:100%;}
+.holiday {position:fixed; top:90px; left:0px;; z-index:53;width:100%;}
 
 .holiday > img {width:100%;; margin:auto;height:170px; object-fit:cover;}
 

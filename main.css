@@ -28,6 +28,10 @@ html {
     scroll-behavior: smooth
 }
 
+.holiday {position:fixed; bottom: 415px; left:0px;; z-index:53;width:100%;}
+
+.holiday > img {width:100%;; margin:auto;height:170px; object-fit:cover;}
+
 .back-btn {
     width: 15px;
     float: left;
@@ -69,8 +73,6 @@ html {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
     display: none;
     border-radius: 20px 20px 0px 0px;
-
-
 
 }
 
@@ -171,7 +173,7 @@ html {
     color: white;
     margin-left: 22px;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 14.7px;
     margin-top: 18px;
     margin-bottom: 156px;
 
@@ -206,7 +208,7 @@ html {
 }
 
 .options {
-    background-color: white;
+  
 }
 
 .options > button {
@@ -217,6 +219,7 @@ html {
     top: 10px;
     border: none;
     background-color: transparent;
+	
 }
 
 .options-sect {
@@ -228,10 +231,10 @@ html {
 .menu-cover {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #d04e4e;
     z-index: -20;
     position: fixed;
-    opacity: 0.4;
+    opacity: 1;
     top: 0px;
     z-index: 45;
     display: none;
@@ -987,7 +990,7 @@ card-btns > button > a {
     border-radius: 50px;
     width: 146px;
     height: 41px;
-    background-color: transparent;
+    background-color: white;
     border: solid;
     border-width: 1.3px;
     border-color: lightgray;

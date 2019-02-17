@@ -604,6 +604,7 @@ card-btns > button > a {
 
 .card-img {
     margin-top: 0px;
+
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -629,11 +630,13 @@ card-btns > button > a {
 
 .card-divider {
     width: 100%;
-    height: 1px;
-    background-color: #4D4D4D;
-    filter: opacity(0.3);
+    height: 16px;
+    background-color:white;;
+    ;
+    filter: opacity(0.2);
     margin-top: 20px;
     margin-bottom: 15px;
+   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
 }
 
 .ad-unit {}
@@ -654,7 +657,6 @@ card-btns > button > a {
 
 
 .button-items > button:focus {
-    outline: none;
     color: green;
 }
 

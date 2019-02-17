@@ -1118,19 +1118,25 @@ card-btns > button > a {
 
 
 .admiralnation-sect > iframe {
+    height: 100%;
     width: 100%;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    position: fixed;
+    border: none;
+}
+
+.admiralnation-sect {
+    display: none;
+
     position: fixed;
     left: 0px;
 
 
     border: none;
     top: 0px;
-    height: 100%;
-    z-index: 50;
-}
 
-.admiralnation-sect {
-    display: none;
+
 }
 
 

@@ -37,7 +37,6 @@
         window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-122866044-3');
 </script>
 
@@ -59,7 +58,7 @@
                 </button></div>
         </div>
 
-        <div class="holiday vivify popIn"><img src=""></div>
+        <div class="holiday vivify popIn"><img src="https://admiralnation.github.io/SHOP/All.html"></div>
 
         <div class="quick-access">
             <div class="quick-link vivify fadeIn">
@@ -100,7 +99,7 @@
                 <button onclick="collapse()"><i class="material-icons">close</i></button>
 
 
-                <a href="https://261985.stiinformationnow.com/InformationNow">
+                <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx">
                     <div class="options-sect" onclick="grades()">
                         <button>
                             <i class="material-icons menu-icon">school</i>
@@ -110,8 +109,6 @@
 
                     </div>
                 </a>
-
-
 
 
 
@@ -138,7 +135,7 @@
                 </div>
 
 
-                <a href="https://admiralnation.github.io/SHOP/">
+                <a href="https://admiralnation.github.io/SHOP/All.html">
                     <div class="options-sect">
                         <button onclick="admiral()">
                             <i class="menu-icon material-icons">
@@ -189,7 +186,23 @@
     </div>
 
 
+    <div class="bottom-navigation" style="display: none;">
+        <div class="button-items">
+            <button onclick="leftpress()"><i class="material-icons">play_circle_outline</i></button>
 
+            <button onclick="homepress()"><i class="material-icons">home</i></button>
+
+            <div class="horizontal-spacer"></div>
+
+            <button onclick="searchopen()"><i class="material-icons">search</i></button>
+
+            <button onclick="rightpress()"><i class="material-icons">fitness_center</i></button>
+
+
+
+
+        </div>
+    </div>
 
 
 
@@ -639,7 +652,7 @@
             </a>
 
             <img class="card-img" style="height:185px;" src="images/dribbble.gif" data-src="Images/grades.jpeg">
-            <p>Tap the menu button at the bottom of the screen. </p>
+            <p>Tap the up arrow on the navigation bar.</p>
 
 
         </div>
@@ -987,6 +1000,8 @@
 
 
 
+
+
     <div class="meal-menu">
 
         <div class="horizontal-nav">
@@ -1018,6 +1033,12 @@
 
 
 
+
+
+
+    <div class="admiralnation-sect vivify fadeIn">
+
+    </div>
 
 
 
@@ -1157,8 +1178,6 @@
 
 
     <script defer src="script.js">
-
-
     </script>
     <script>
         AOS.init();
@@ -1167,7 +1186,6 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });

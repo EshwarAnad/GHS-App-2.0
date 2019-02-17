@@ -491,16 +491,16 @@ html {
 
 .logo-wrapper {
     margin: auto;
-    width: 140px;
-    margin-top: -2px;
+    width: 71px;
+    margin-top: 6px;
 
 }
 
 .logo-wrapper > img {
     margin: auto;
-    width: 140px;
+    width: 66px;
     object-fit: cover;
-    height: 55px;
+    height: 42px;
 }
 
 .navigation-card {

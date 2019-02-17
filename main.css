@@ -1041,7 +1041,7 @@ card-btns > button > a {
 
 
 
-.grades-sect > iframe {
+.grades-sect > object {
     width: 100%;
     height: 100%;
     position: fixed;

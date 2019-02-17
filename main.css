@@ -1121,8 +1121,7 @@ card-btns > button > a {
     border: none;
     top: 0px;
     height: 100%;
-    z-index: 14;
-
+    z-index: 50;
 }
 
 .admiralnation-sect {

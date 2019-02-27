@@ -32,9 +32,13 @@ html::-webkit-scrollbar {
     width: 0 !important
 }
 
+summary:focus {outline: none; }
+ 
 .swipe-menu::-webkit-scrollbar {
     width: 0 !important
 }
+
+::-webkit-details-marker { display:none; }
 
 .sect-indicator {
     position: fixed;
@@ -226,11 +230,7 @@ html::-webkit-scrollbar {
     transition: 0.3s ease;
 }
 
-.swipe-menu > a > img:hover {
-    width: 100%;
-    border-radius: 11px;
-    height: 358px;
-}
+
 
 
 
@@ -493,8 +493,31 @@ html::-webkit-scrollbar {
 
 
 
+.swipe-menu > audio {background-color: white; margin-left: 10px;}
+
+.audio-wrapper {margin:auto; width: 90%;; }
+
+.audio-wrapper > audio {width:100%;}
+
+summary {margin: auto; width: 146px;}
+
+summary > div {margin: auto; width: 136px;background-color:#ffffff;border-radius: 50px;
+    
+    height: 41px;
+   
+    border: solid;
+    border-width: 1.3px;
+    border-color: lightgray;
+ margin-top: 0px;
+	
+    }
+
+summary > div > p {margin-left: 35px;margin-top: 13px;width: 136px;
+   font-size: 12px;font-weight: normal;
+   }
 
 
+ 
 
 
 
@@ -636,13 +659,14 @@ html::-webkit-scrollbar {
 }
 
 .navigation-card > p {
-    margin: auto;
-    width: 90%;
+    
+    width: 92%;;
     ;
     font-size: 14px;
     margin-top: 15px;
     line-height: 23px;
     transition: .3s ease;
+	margin-left: 20px;
 }
 
 .card-btns {
@@ -727,6 +751,9 @@ card-btns > button > a {
     margin: auto;
     width: 345px;
 }
+
+.classic-cardivider {
+   width:100%; height:1.3px; background-color:lightgray}
 
 .card-divider {
     width: 100%;
@@ -911,11 +938,13 @@ card-btns > button > a {
     border-radius: 51px;
 
     border: none;
+
 }
 
 .quick-link {
     display: inline-block;
-    margin-left: 4px;
+    margin-left: 5px;
+	
 }
 
 .frame-wrapper > iframe {
@@ -958,7 +987,7 @@ card-btns > button > a {
 
 .live-sect {
     display: block;
-    margin-top: 26px;
+
 }
 
 .video-sect {
@@ -972,7 +1001,7 @@ card-btns > button > a {
     width: 100%;
     height: 33vh;
     border: none;
-    margin-top: 10px;
+   
 }
 
 .media-sect {
@@ -1209,7 +1238,7 @@ card-btns > button > a {
 
     top: 0px;
     width: 100%;
-    height: 100%;
+    height: 90%;
     border: none;
     z-index: 15;
 

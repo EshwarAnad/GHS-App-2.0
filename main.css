@@ -124,7 +124,7 @@ summary:focus {outline: none; }
 .hamburger-menu {
     position: fixed;
     right: 0px;
-    bottom: 1px;
+    bottom: 0px;
     z-index: 56;
     width: 100%;
     background-color: white;

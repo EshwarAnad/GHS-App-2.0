@@ -6,6 +6,7 @@
     <title>GHS App</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+	<link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="css/vivify.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="vivify.min.css" rel="stylesheet" type="text/css" />
@@ -60,6 +61,13 @@
 
 </head>
 
+	 <script src="/upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content': '<html><body><h1>Top Hotels in Rome</h1><p>Villa Domus</p><p>Hotel Trivelli</p></body></html>'
+    });
+  </script>
+	
 <body>
 
     <div class="univ-menu">
@@ -217,9 +225,7 @@
 
     <div class="homescreen">
 
-        <div class="sect-indicator vivify popIn "><i class="material-icons ">home</i>
-            <h3>Home</h3>
-        </div>
+    
 
         <div class="header-base">
             <div class="logo-wrapper"><img src="Assets/App%20Logo%20Embed.jpg"></div>
@@ -230,36 +236,7 @@
         <div class="spacer" id="spacer"></div>
 
        
-      
-        <div class="navigation-card cd1 vivify fadeIn delay-100 event" data-aos="fade-up">
-
-            <h3 class="darkmode" style="margin-left: 23px;">Junior Senior Prom
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 class="darkmode" style="margin-left: 23px">Date: March 23, 2019
-                    </h4>
-                </div>
-            </a>
-
-           <a data-aos = "fade-up" class= "calendar-btn " target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NDVvY2pubTBxZnNjbW1xbGw2bnJxM28zNWsgamJyb2FkbmF4MjBAZ3VsZnBvcnRzY2hvb2xzLm9yZw&tmsrc=jbroadnax20%40gulfportschools.org"><i class = "material-icons">
-
-add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-yhBmNa5Bb6AnbCBxfvoPWwmwQYaIOVvdnTiU6XLt3P36WECRA:https://dcnxfkgt2gjxz.cloudfront.net/Logos/Integration-Card-Logos/integrationcards-googlecalendar.svg"></a>
-           
-            <img class="card-img" style="height:185px;" src="images/dribbble.gif"
-                data-src="images/amy-kate-551417-unsplash.jpg" >
-            <p>Tickets $30 per person includes: Keepsake cup & invitation, 5x7 professional photos, snacks & drinks at
-                event. </p>
-
-            <div class="rounded-btn-wrapper" style="margin-bottom: 77px; "> <a href="https://goo.gl/maps/G21zqLxYVy32"
-                    class="rounded-btn" target="_blank"><button>View On Maps</button></a><a
-                    href="http://www.climbcdc.org/event-centre" class="rounded-btn" target="_blank"><button>Visit
-                        Site</button></a>
-
-            </div>
-        </div>
-
-<div class="card-divider"></div>
+ 
   
         
 
@@ -307,7 +284,7 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
  <div class="navigation-card cd1  help" data-aos="fade-up">
 
-            <h3 class="darkmode" style="margin-left: 23px;">GHS - Behind the Faces | Podcast
+            <h3 class="darkmode" style="margin-left: 23px;">Behind the Faces | Podcast
             </h3>
             <a href="#">
                 <div>
@@ -315,6 +292,8 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
                     </h4>
                 </div>
             </a>
+	 
+	
 			
 			<img class="card-img" style="object-fit: cover;" src="images/dribbble.gif" data-src="images/behindthefaces.png"/>
 
@@ -400,6 +379,39 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
 
 
+        <div class="navigation-card cd1  help" data-aos="fade-up" id="act">
+
+            <h3 class="darkmode" style="margin-left: 23px;">Act 2019
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode" style="margin-left: 23px">GHS App
+                    </h4>
+                </div>
+            </a>
+			
+			 <a data-aos = "fade-up" class= "calendar-btn " target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MGZnYm5pa2J2ZGJocTRlbDFlbGxhbW8xODAgamFjb2J5YnJvYWRuYXguamJAbQ&amp;tmsrc=jacobybroadnax.jb%40gmail.com"><i class = "material-icons">
+
+add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-yhBmNa5Bb6AnbCBxfvoPWwmwQYaIOVvdnTiU6XLt3P36WECRA:https://dcnxfkgt2gjxz.cloudfront.net/Logos/Integration-Card-Logos/integrationcards-googlecalendar.svg"></a>
+
+            <div class="swipe-menu"><img src="images/dribbble.gif" data-src="images/act.jpeg" /><img
+                    src="images/dribbble.gif" data-src="images/act10th.svg" />
+
+
+            </div>
+
+
+
+
+            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px; "> <a href="http://www.act.org/"
+                    class="rounded-btn"><button>Act.org</button></a></div>
+        </div>
+
+
+
+
+        <div class="card-divider"></div>
+
 
 
 
@@ -463,35 +475,6 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
 
 
-
-        <div class="navigation-card cd1  help" data-aos="fade-up" id="act">
-
-            <h3 class="darkmode" style="margin-left: 23px;">Act 2019
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 class="darkmode" style="margin-left: 23px">GHS App
-                    </h4>
-                </div>
-            </a>
-
-            <div class="swipe-menu"><img src="images/dribbble.gif" data-src="images/act.jpeg" /><img
-                    src="images/dribbble.gif" data-src="images/act10th.svg" />
-
-
-            </div>
-
-
-
-
-            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px; "> <a href="http://www.act.org/"
-                    class="rounded-btn"><button>Act.org</button></a></div>
-        </div>
-
-
-
-
-        <div class="card-divider"></div>
 
 
 
@@ -684,9 +667,7 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
     <div class="media-sect">
 
-        <div class="sect-indicator vivify popIn"><i class="material-icons ">live_tv</i>
-            <h3>Media</h3>
-        </div>
+       
 
 
 
@@ -737,10 +718,7 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
     <div class="athletic-sect">
 
-        <div class="sect-indicator vivify popIn"><i class="material-icons ">fitness_center</i>
-            <h3>Athletics</h3>
-        </div>
-
+       
         <div class="horizontal-nav">
             <div class="button-wrapper" style="width: 169px;"><button class="vivify fadeIn" id="btn-schedule"
                     onclick="schedule()">Schedule</button><button class="vivify fadeIn" style="width: 84px;"
@@ -811,9 +789,7 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
     <div class="meal-menu">
 
-        <div class="sect-indicator vivify popIn"><i class="material-icons ">restaurant</i>
-            <h3>Meal Menu</h3>
-        </div>
+ 
 
         <div class="horizontal-nav">
             <div class="button-wrapper"><button id="btn-lunch" class="vivify fadeIn"
@@ -862,9 +838,7 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
 
     <div class="kahoot-sect">
-        <div class="sect-indicator vivify popIn"><i class="material-icons ">gamepad</i>
-            <h3>Kahoot!</h3>
-        </div>
+    
 
         <iframe src="https://kahoot.it/"></iframe>
     </div>
@@ -872,9 +846,7 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
 
     <div class="search-sect">
-        <div class="sect-indicator vivify popIn"><i class="material-icons ">search</i>
-            <h3>Kahoot!</h3>
-        </div>
+        
         <div class="close-btn"><button onclick="searchclose()">Cancel</button></div>
         <input class="search-input vivify popIn" style="padding-left:25px; " type="text" id="mySearch"
             onkeyup="myFunction()" placeholder="&emsp; Find A Teacher..." title="Type in a teacher">

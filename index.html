@@ -13,36 +13,6 @@
     <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link href="splashscreens/iphone5_splash.png"
-        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphone6_splash.png"
-        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphoneplus_splash.png"
-        media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphonex_splash.png"
-        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphonexr_splash.png"
-        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphonexsmax_splash.png"
-        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/ipad_splash.png"
-        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/ipadpro1_splash.png"
-        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/ipadpro3_splash.png"
-        media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/ipadpro2_splash.png"
-        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="GHS App">
@@ -65,6 +35,10 @@
 	
 <body>
 
+	<div class="splashscreen vivify delay-2500 fadeOut" id="loader"><div class="splash-logo vivify fadeOut delay-2000"><img class="" style="left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);width: 40%;" src="Branding/Logo filled.svg"></div></div>
+	
     <div class="univ-menu">
 
         <button class="menu-cover " onclick="collapse()">
@@ -269,11 +243,6 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
 
         <div class="card-divider"></div>
-
-
-
-
-
 
 
 
@@ -602,11 +571,15 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
 
 
 
+
+
+
+
+
+
+
+
         <div class="card-divider"></div>
-
-
-
-
 
 
 
@@ -813,9 +786,12 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
                     <div class="line-indicator vivify pullLeft duration-500"></div>
                 </div>
             </div>
-            <div class="meal-wrapper"><img class=" meal " src="Menu/MarchLunch-min.png"></div>
+			
+			<div class="navigation-card" style = "position:absolute; z-index: 1; left: 3px; top: 60px; "><div class="rounded-btn-wrapper" style="width: 180px;margin-top: 3px;"><a href="#lunchanchor" class="rounded-btn" ><button style = " border-color: #efefef">Skip To Today</button></a></div></div>
+            
+			<div class="meal-wrapper"><img class=" meal " src="Menu/MarchLunch-min.png"></div>
 
-
+<div class="lunchanchor" id="lunchanchor"></div>
         </div>
 
         <div class="breakfast-menu">
@@ -1141,6 +1117,18 @@ add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:
         }, false)
 
     </script>
+
+<script>
+
+
+
+window.setTimeout(loaded, 2650);
+
+var element = document.getElementById('loader');
+
+function loaded() {
+    element.style.display = 'none';
+}</script>
 </body>
 
 </html>

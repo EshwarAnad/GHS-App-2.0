@@ -1158,7 +1158,7 @@ card-btns > button > a {
     outline: none;
 }
 
-
+.rounded-btn > button:hover {background-color:lightgray;}
 
 .fab {
     position: fixed;
@@ -1196,13 +1196,13 @@ card-btns > button > a {
 
 
 
-
+.lunchanchor {width: 100%; background-color: transparent; position: absolute; top: 4690px;height : 50px;  }
 
 
 .meal {
 
     position: absolute;
-    top: -124px;
+    top: -80px;
 
 }
 
@@ -1426,3 +1426,12 @@ card-btns > button > a {
 
     display: inline-block
 }
+
+.splashscreen {
+position: fixed; width: 100%; height: 100%; background-color: white;;z-index: 200; 
+}
+
+.splash-logo > img {position: fixed;
+    ;}
+
+

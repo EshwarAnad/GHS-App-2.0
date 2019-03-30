@@ -1196,13 +1196,15 @@ card-btns > button > a {
 
 
 
-.lunchanchor {width: 100%; background-color: transparent; position: absolute; top: 4690px;height : 50px;  }
+.lunchanchor {width: 100%; background-color: transparent; position: absolute; top: 50px;height : 50px;  }
 
 
 .meal {
 
     position: absolute;
-    top: -80px;
+    top: -165px;
+	width: 360px;
+	
 
 }
 

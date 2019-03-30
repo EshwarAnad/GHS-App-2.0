@@ -6,48 +6,19 @@
     <title>GHS App</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+	<link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="css/vivify.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="vivify.min.css" rel="stylesheet" type="text/css" />
     <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link href="splashscreens/iphone5_splash.png"
-        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphone6_splash.png"
-        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphoneplus_splash.png"
-        media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphonex_splash.png"
-        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphonexr_splash.png"
-        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/iphonexsmax_splash.png"
-        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/ipad_splash.png"
-        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/ipadpro1_splash.png"
-        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/ipadpro3_splash.png"
-        media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
-    <link href="splashscreens/ipadpro2_splash.png"
-        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
-        rel="apple-touch-startup-image" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="GHS App">
     <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
 
-
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
@@ -60,8 +31,14 @@
 
 </head>
 
+	 
+	
 <body>
 
+	<div class="splashscreen vivify delay-2500 fadeOut" id="loader"><div class="splash-logo vivify fadeOut delay-2000"><img class="" style="left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);width: 40%;" src="Branding/Logo filled.svg"></div></div>
+	
     <div class="univ-menu">
 
         <button class="menu-cover " onclick="collapse()">
@@ -72,7 +49,7 @@
         <div class="search-link">
             <div class="search-base">
                 <button onclick="searchopen()"><i class="material-icons">search</i>
-                    <p>Search</p>
+                    <p>Find A Teacher</p>
                 </button></div>
         </div>
 
@@ -217,7 +194,7 @@
 
     <div class="homescreen">
 
-        
+    
 
         <div class="header-base">
             <div class="logo-wrapper"><img src="Assets/App%20Logo%20Embed.jpg"></div>
@@ -225,89 +202,10 @@
 
         </div>
 
-
-
         <div class="spacer" id="spacer"></div>
 
-
-
-         <div class="navigation-card cd1 vivify fadeIn delay-100 event" data-aos="fade-up">
-
-            <h3 class="darkmode" style="margin-left: 23px;">Of Mice And Men | Admiral Theatre
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 class="darkmode" style="margin-left: 23px">Date: March 21-22, 2019
-                    </h4>
-                </div>
-            </a>
-
-            <img class="card-img" style="height:185px;" src="images/dribbble.gif" data-src="Images/miceandmen.jpeg">
-            <p class="p-plus ">Based on the classic novella written by John Steinbeck, Of Mice and Men tells the tale of
-                two great friends and their struggle to live the American dream. George and Lennie have been traveling
-                together from ranch to ranch for years, working hard to make ends meet and save enough for a place of
-                their own. <span class="more"> The two are polar opposites: George is intelligent, quick and small,
-                    while Lennie is slow-minded, childlike, and tall. Though they are different, they care deeply about
-                    each other. They have been dreaming for years to save enough for a little land of their own when
-                    they are both hired to a new job they believe that they may finally achieve their goal. But trouble
-                    begins to brew when one of the bosses' wife becomes too interested in the infatuated Lennie. Tragic,
-                    yet beautiful, Of Mice and Men is the extremely popular play that has become a staple of American
-                    theatre.
-                </span><button onclick="viewmore()" class="more-btn">Read More</button><button onclick="viewless()"
-                    class="less-btn">Read Less</button> </p>
-
-            <div class="card-btns">
-
-
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="card-divider"></div>
-      
-
-
-        <div class="navigation-card cd1 vivify fadeIn delay-100 event" data-aos="fade-up">
-
-            <h3 class="darkmode" style="margin-left: 23px;">Junior Senior Prom
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 class="darkmode" style="margin-left: 23px">Date: March 23, 2019
-                    </h4>
-                </div>
-            </a>
-
-            <img class="card-img" style="height:185px;" src="images/dribbble.gif"
-                data-src="images/amy-kate-551417-unsplash.jpg" >
-            <p>Tickets $30 per person includes: Keepsake cup & invitation, 5x7 professional photos, snacks & drinks at
-                event. </p>
-
-            <div class="rounded-btn-wrapper" style="margin-bottom: 77px; "> <a href="https://goo.gl/maps/G21zqLxYVy32"
-                    class="rounded-btn" target="_blank"><button>View On Maps</button></a><a
-                    href="http://www.climbcdc.org/event-centre" class="rounded-btn" target="_blank"><button>Visit
-                        Site</button></a>
-
-            </div>
-        </div>
-
-<div class="card-divider"></div>
+       
+ 
   
         
 
@@ -325,6 +223,10 @@
                     </h4>
                 </div>
             </a>
+			
+			<a data-aos = "fade-up" class= "calendar-btn " target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NXRlb2k3NGJuN2k3dGpwZmxrNWZhanN2aTAgamFjb2J5YnJvYWRuYXguamJAbQ&amp;tmsrc=jacobybroadnax.jb%40gmail.com"><i class = "material-icons">
+
+add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-yhBmNa5Bb6AnbCBxfvoPWwmwQYaIOVvdnTiU6XLt3P36WECRA:https://dcnxfkgt2gjxz.cloudfront.net/Logos/Integration-Card-Logos/integrationcards-googlecalendar.svg"></a>
 
             <img class="card-img" src="images/Dribbble.gif" data-src="images/Anouncements.jpg">
 
@@ -335,7 +237,6 @@
 
             </div>
 
-
         </div>
 
 
@@ -345,14 +246,9 @@
 
 
 
-
-
-
-
-
  <div class="navigation-card cd1  help" data-aos="fade-up">
 
-            <h3 class="darkmode" style="margin-left: 23px;">GHS - Behind the Faces | Podcast
+            <h3 class="darkmode" style="margin-left: 23px;">Behind the Faces | Podcast
             </h3>
             <a href="#">
                 <div>
@@ -360,6 +256,8 @@
                     </h4>
                 </div>
             </a>
+	 
+	
 			
 			<img class="card-img" style="object-fit: cover;" src="images/dribbble.gif" data-src="images/behindthefaces.png"/>
 
@@ -372,22 +270,22 @@
 
 					
 					<details>
-  <summary class = "vivify popIn" style=""><div class="p-wrapper"><p>Listen Now</p></div></summary>
+  <summary  style=""><div class="p-wrapper"><p>Listen Now</p></div></summary>
 					<div class="classic-cardivider" style="margin-top: 15px;"></div>
- <div class="navigation-card cd1 " data-aos="fade-up">
+ <div class="navigation-card cd1 vivify fadeInLeft" >
 
-            <h3 class="darkmode vivify fadeIn" style="margin-left: 23px;">Light at the End of the Tunnel
+            <h3 class="darkmode " style="margin-left: 23px;">Light at the End of the Tunnel
             </h3>
             <a href="#">
                 <div>
-                    <h4 class="darkmode vivify fadeIn" style="margin-left: 23px">Episode 1 | 5:37
+                    <h4 class="darkmode " style="margin-left: 23px">Episode 1 | 5:37
                     </h4>
                 </div>
             </a>
 			
 		
 
-<div class="audio-wrapper"><audio controls class="vivify popIn">
+<div class="audio-wrapper"><audio controls >
 <source src="Podcast/Episode 1 - Light at the End of the Tunnel  .mp3"></source>
 
 </audio></div>
@@ -403,20 +301,20 @@
 		
 		<div class="classic-cardivider"></div>
 	 
-		 <div class="navigation-card cd1 " data-aos="fade-up">
+		 <div class="navigation-card cd1 vivify fadeInLeft delay-100" >
 
-            <h3 class="darkmode vivify fadeIn delay-400" style="margin-left: 23px;">Falling to Pieces
+            <h3 class="darkmode vivify " style="margin-left: 23px;">Falling to Pieces
             </h3>
             <a href="#">
                 <div>
-                    <h4 class="darkmode vivify fadeIn delay-400" style="margin-left: 23px">Episode 2 | 6:09
+                    <h4 class="darkmode " style="margin-left: 23px">Episode 2 | 6:09
                     </h4>
                 </div>
             </a>
 			
 		
 
-<div class="audio-wrapper"><audio controls class="vivify popIn delay-400">
+<div class="audio-wrapper"><audio controls class="">
 <source src="Podcast/Episode 2 - Falling to Pieces.mp3"></source>
 
 </audio></div>
@@ -429,6 +327,30 @@
 					
 					
         </div>
+		
+		
+		<div class="classic-cardivider"></div>
+	 
+		 <div class="navigation-card cd1 vivify fadeInLeft delay-100" >
+
+            <h3 class="darkmode vivify " style="margin-left: 23px;">Coming Soon
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode " style="margin-left: 23px">Episode 3
+                    </h4>
+                </div>
+            </a>
+			
+		
+
+
+
+
+					
+					
+        </div>
+		
 		
 </details>
         </div>
@@ -445,8 +367,71 @@
 
 
 
+        <div class="navigation-card cd1  help" data-aos="fade-up" id="act">
+
+            <h3 class="darkmode" style="margin-left: 23px;">Act 2019
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode" style="margin-left: 23px">GHS App
+                    </h4>
+                </div>
+            </a>
+			
+			 <a data-aos = "fade-up" class= "calendar-btn " target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MGZnYm5pa2J2ZGJocTRlbDFlbGxhbW8xODAgamFjb2J5YnJvYWRuYXguamJAbQ&amp;tmsrc=jacobybroadnax.jb%40gmail.com"><i class = "material-icons">
+
+add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-yhBmNa5Bb6AnbCBxfvoPWwmwQYaIOVvdnTiU6XLt3P36WECRA:https://dcnxfkgt2gjxz.cloudfront.net/Logos/Integration-Card-Logos/integrationcards-googlecalendar.svg"></a>
+
+            <div class="swipe-menu"><img src="images/dribbble.gif" data-src="images/act.jpeg" /><img
+                    src="images/dribbble.gif" data-src="images/act10th.svg" />
 
 
+            </div>
+
+
+
+
+            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px; "> <a href="http://www.act.org/"
+                    class="rounded-btn"><button>Act.org</button></a></div>
+        </div>
+
+
+
+
+        <div class="card-divider"></div>
+
+
+
+		
+		<div class="navigation-card cd1 event" data-aos="fade-up" id="share">
+
+            <h3 class="darkmode" style="margin-left: 23px;">HOSA  Blood Drive
+
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode" style="margin-left: 23px">HOSA | April 8th - 16th
+
+
+                    </h4>
+                </div>
+            </a>
+            
+<img class="card-img" src="images/blooddrive.jpg"></img>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="card-divider"></div>
+		
+		
 
 
 
@@ -509,35 +494,6 @@
 
 
 
-        <div class="navigation-card cd1  help" data-aos="fade-up" id="act">
-
-            <h3 class="darkmode" style="margin-left: 23px;">Act 2019
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 class="darkmode" style="margin-left: 23px">GHS App
-                    </h4>
-                </div>
-            </a>
-
-            <div class="swipe-menu"><img src="images/dribbble.gif" data-src="images/act.jpeg" /><img
-                    src="images/dribbble.gif" data-src="images/act10th.svg" />
-
-
-            </div>
-
-
-
-
-            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px; "> <a href="http://www.act.org/"
-                    class="rounded-btn"><button>Act.org</button></a></div>
-        </div>
-
-
-
-
-        <div class="card-divider"></div>
-
 
 
 
@@ -571,47 +527,6 @@
 
         <div class="card-divider"></div>
 
-
-
-
-        <div class="navigation-card cd1 vivify fadeIn delay-100 promote" data-aos="fade-up">
-
-            <h3 class="darkmode" style="margin-left: 23px;">Teachers Of The Month
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 class="darkmode" style="margin-left: 23px">January
-                    </h4>
-                </div>
-            </a>
-
-
-            <div class="swipe-menu"><img style="height: 234px; border: none;object-fit: cover" src="images/dribbble.gif"
-                    data-src="images/Teacher of the Month Photo Mrs. Clark.jpg"><img
-                    style="height: 234px;border: none; object-fit: cover" src="images/dribbble.gif"
-                    data-src="images/MEawesome.png"></div>
-
-
-            <p>Congratulations to two incredible teachers <b>Mrs.Clark</b> and <b>Mr.Middleton</b>. </p>
-
-
-
-            <div class="card-btns">
-
-
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-        <div class="card-divider"></div>
 
 
 
@@ -656,11 +571,15 @@
 
 
 
+
+
+
+
+
+
+
+
         <div class="card-divider"></div>
-
-
-
-
 
 
 
@@ -729,7 +648,7 @@
 
     <div class="media-sect">
 
-      
+       
 
 
 
@@ -780,10 +699,7 @@
 
     <div class="athletic-sect">
 
-        <div class="sect-indicator vivify popIn"><i class="material-icons ">fitness_center</i>
-            <h3>Athletics</h3>
-        </div>
-
+       
         <div class="horizontal-nav">
             <div class="button-wrapper" style="width: 169px;"><button class="vivify fadeIn" id="btn-schedule"
                     onclick="schedule()">Schedule</button><button class="vivify fadeIn" style="width: 84px;"
@@ -854,7 +770,7 @@
 
     <div class="meal-menu">
 
-      
+ 
 
         <div class="horizontal-nav">
             <div class="button-wrapper"><button id="btn-lunch" class="vivify fadeIn"
@@ -870,9 +786,12 @@
                     <div class="line-indicator vivify pullLeft duration-500"></div>
                 </div>
             </div>
-            <div class="meal-wrapper"><img class=" meal " src="Menu/MarchLunch-min.png"></div>
+			
+			<div class="navigation-card" style = "position:absolute; z-index: 1; left: 3px; top: 60px; "><div class="rounded-btn-wrapper" style="width: 180px;margin-top: 3px;"><a href="#lunchanchor" class="rounded-btn" ><button style = " border-color: #efefef">Skip To Today</button></a></div></div>
+            
+			<div class="meal-wrapper"><img class=" meal " src="Menu/MarchLunch-min.png"></div>
 
-
+<div class="lunchanchor" id="lunchanchor"></div>
         </div>
 
         <div class="breakfast-menu">
@@ -903,7 +822,7 @@
 
 
     <div class="kahoot-sect">
-       
+    
 
         <iframe src="https://kahoot.it/"></iframe>
     </div>
@@ -911,9 +830,7 @@
 
 
     <div class="search-sect">
-        <div class="sect-indicator vivify popIn"><i class="material-icons ">search</i>
-            <h3>Kahoot!</h3>
-        </div>
+        
         <div class="close-btn"><button onclick="searchclose()">Cancel</button></div>
         <input class="search-input vivify popIn" style="padding-left:25px; " type="text" id="mySearch"
             onkeyup="myFunction()" placeholder="&emsp; Find A Teacher..." title="Type in a teacher">
@@ -1200,6 +1117,18 @@
         }, false)
 
     </script>
+
+<script>
+
+
+
+window.setTimeout(loaded, 2650);
+
+var element = document.getElementById('loader');
+
+function loaded() {
+    element.style.display = 'none';
+}</script>
 </body>
 
 </html>

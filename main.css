@@ -122,10 +122,10 @@ summary:focus {
 
 .header-base {
     width: 100%;
-    height: 54px;
+    height: 104px;
     background-color:white ;
     position: fixed;
-    top: 0px;
+    top: -50px;
     left: 0px;
     z-index: 40;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
@@ -657,7 +657,7 @@ summary > div > p {
 .logo-wrapper {
     margin: auto;
     width: 71px;
-    margin-top: 6px;
+    margin-top: 56px;
 
 }
 

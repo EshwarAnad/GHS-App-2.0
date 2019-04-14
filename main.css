@@ -1002,9 +1002,9 @@ card-btns > button > a {
     height: 51px;
     background-color: white;
     position: fixed;
-    top: 0px;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.16);
-    z-index: 10;
+    top: 46px;
+ box-shadow: -1px 9px 5px -5px rgba(0,0,0,0.11);
+    z-index: 43;
 }
 
 .button-wrapper > button {
@@ -1249,7 +1249,7 @@ card-btns > button > a {
 .meal {
 
     position: absolute;
-    top: 25px;
+    top: 79px;
     width: 360px;
 
 
@@ -1447,8 +1447,8 @@ card-btns > button > a {
 .indicator-container {
     position: fixed;
     width: 100%;
-    top: 51px;
-    z-index: 10;
+    top: 96px;
+    z-index: 50;
 }
 
 .mini-text {

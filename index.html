@@ -48,7 +48,7 @@ Google Calendar
     <div class="splashscreen vivify delay-1000 fadeOut" id="loader">
         <div class="splash-logo vivify popOut delay-700"><img class="" style="left: 50%;
     top: 50%;
-    transform: translate(-50%,200%);width: 40%;margin-top: 75px;" src="Branding/Logo filled.svg"></div>
+    transform: translate(-50%,200%);width: 40%;margin-top: 75px;" src="Branding/App%20Logo%20Embed.png"></div>
     </div>
 
     <div class="univ-menu">
@@ -195,7 +195,7 @@ Google Calendar
 
 
 
-    <div class="menu-button"><button onclick="expand()" class="vivify"><i style="font-size: 26px;color: #012395;" class="material-icons">
+    <div class="menu-button"><button onclick="expand()" class="vivify"><i style="font-size: 26px;" class="material-icons">
                 menu</i>
             <p>Menu</p>
         </button>
@@ -211,7 +211,7 @@ Google Calendar
 
 
         <div class="header-base">
-            <div class="logo-wrapper"><img class="vivify popIn delay-1250" src="Assets/App%20Logo%20Embed.jpg"></div>
+            <div class="logo-wrapper"><img class="vivify popIn delay-1250" src="Branding/App%20Logo%20Embed.png"></div>
 
 
         </div>
@@ -237,9 +237,6 @@ Google Calendar
                 </div>
             </a>
 
-            <a data-aos="fade-up" class="calendar-btn " target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MnJyZG81OXJtMzE4czhwN2RuNjI3NGhtaDAgamFjb2J5YnJvYWRuYXguamJAbQ&amp;tmsrc=jacobybroadnax.jb%40gmail.com"><i class="material-icons">
-
-                    add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-yhBmNa5Bb6AnbCBxfvoPWwmwQYaIOVvdnTiU6XLt3P36WECRA:https://dcnxfkgt2gjxz.cloudfront.net/Logos/Integration-Card-Logos/integrationcards-googlecalendar.svg"></a>
 
             <img class="card-img" src="Images/MGC%20Sign.jpg">
 
@@ -248,14 +245,49 @@ Google Calendar
 
 
 
-        <div class="card-divider"></div>
+        <div class="card-divider accent"></div>
 
 
 
 
 
 
+        <div class="navigation-card cd1  help" data-aos="fade-up">
 
+
+
+            <h3 class="darkmode" style="margin-left: 23px;">Try New Dark Mode
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode" style="margin-left: 23px">GHS App | Experimental
+                    </h4>
+                </div>
+            </a>
+
+            <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;"> <button class="normalmode">Disable</button>
+                <button class="darkmode">Enable</button></div>
+
+            <script>$(document).ready(function($) {
+	var mode = localStorage.getItem('mode');
+  if (mode) 
+  	$('body').addClass(mode);
+                    $('accent').addClass(mode);
+
+  $(".darkmode").click(function() {
+    $("body").addClass("darkclass");
+      $("accent").addClass("darkclass");
+    localStorage.setItem('mode', 'darkclass');
+  });
+
+  $(".normalmode").click(function() {
+    $("body").removeClass("darkclass");
+      $("accent").removeClass("darkclass");
+    localStorage.setItem('mode', null);
+  });
+});
+</script>
+        </div>
 
 
 
@@ -655,7 +687,7 @@ Google Calendar
 
 
         <div class="header-base">
-            <div class="logo-wrapper"><img src="Assets/App%20Logo%20Embed.jpg"></div>
+            <div class="logo-wrapper"><img src="Branding/App%20Logo%20Embed.png"></div>
 
 
         </div>
@@ -707,7 +739,7 @@ Google Calendar
     <div class="athletic-sect">
 
         <div class="header-base">
-            <div class="logo-wrapper"><img src="Assets/App%20Logo%20Embed.jpg"></div>
+            <div class="logo-wrapper"><img src="Branding/App%20Logo%20Embed.png"></div>
 
 
         </div>
@@ -776,7 +808,7 @@ Google Calendar
     <div class="meal-menu">
 
         <div class="header-base">
-            <div class="logo-wrapper"><img src="Assets/App%20Logo%20Embed.jpg"></div>
+            <div class="logo-wrapper"><img src="Branding/App%20Logo%20Embed.png"></div>
 
 
         </div>
@@ -830,7 +862,7 @@ Google Calendar
 
     <div class="kahoot-sect">
         <div class="header-base">
-            <div class="logo-wrapper"><img src="Assets/App%20Logo%20Embed.jpg"></div>
+            <div class="logo-wrapper"><img src="Branding/App%20Logo%20Embed.png"></div>
 
 
         </div>

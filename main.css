@@ -902,6 +902,7 @@ card-btns > button > a {
     float: left;
     margin-left: 15px;
     margin-top: 9px;
+    color: #012395;
 }
 
 .menu-button > button > p {
@@ -1505,10 +1506,35 @@ card-btns > button > a {
 
 
 body.darkclass {
+    background-color: #111111;
+
+
+}
+
+body.darkclass .header-base {
     background-color: black;
+}
+
+body.darkclass .navigation-card {
     color: white;
 }
 
-.logo.darkclass {
-    display: none;
+body.darkclass .menu-button > button {
+    background-color: black;
+    border: solid;
+    border-width: 1.3px;
+    color: white;
+}
+
+body.darkclass .menu-button > button > p {
+    color: white;
+}
+
+body.darkclass .material-icons {
+    color: white;
+
+}
+
+body.darkclass .splashscreen {
+    background-color: #111111
 }

@@ -1172,7 +1172,7 @@ card-btns > button > a {
 .calendar {
     position: fixed;
     width: 100%;
-    top: 0px;
+    top: 100px;
     height: 100%;
 }
 
@@ -1613,5 +1613,21 @@ body.darkclass .quick-link > button {
 }
 
 body.darkclass .quick-link > button > p {
+    color: white;
+}
+
+body.darkclass .kahoot-sect > iframe {
+    filter: invert(100)
+}
+
+body.darkclass .meal-wrapper {
+    filter: invert(150)
+}
+
+body.darkclass .horizontal-nav {
+    background-color: black;
+}
+
+body.darkclass button {
     color: white;
 }

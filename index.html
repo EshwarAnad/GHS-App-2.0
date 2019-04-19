@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="GHS App">
     <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
-
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -249,6 +249,55 @@ Google Calendar
 
 
         <div class="card-divider"></div>
+
+
+
+
+
+
+        <div class="navigation-card cd1  help" data-aos="fade-up">
+
+
+
+            <h3 class="darkmode" style="margin-left: 23px;">Try New Dark Mode
+            </h3>
+            <a href="#">
+                <div>
+                    <h4 class="darkmode" style="margin-left: 23px">GHS App | Experimental
+                    </h4>
+                </div>
+            </a>
+
+            <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;"> <button class="normalmode">Disable</button>
+                <button class="darkmode">Enable</button></div>
+
+            <script>$(document).ready(function($) {
+	var mode = localStorage.getItem('mode');
+  if (mode) 
+  	$('body').addClass(mode);
+
+  $(".darkmode").click(function() {
+    $("body").addClass("darkclass");
+    localStorage.setItem('mode', 'darkclass');
+  });
+
+  $(".normalmode").click(function() {
+    $("body").removeClass("darkclass");
+    localStorage.setItem('mode', null);
+  });
+});
+</script>
+        </div>
+
+
+
+        <div class="card-divider"></div>
+
+
+
+
+
+
 
         <div class="navigation-card cd1  help" data-aos="fade-up">
 
@@ -996,6 +1045,25 @@ Google Calendar
                 }
             }
         }, false)
+
+    </script>
+
+    <script>
+        $(document).ready(function($) {
+            var mode = localStorage.getItem('mode');
+            if (mode)
+                $('body').addClass(mode);
+
+            $(".darkmode").click(function() {
+                $("body").addClass("darkclass");
+                localStorage.setItem('mode', 'darkclass');
+            });
+
+            $(".normalmode").click(function() {
+                $("body").removeClass("darkclass");
+                localStorage.setItem('mode', null);
+            });
+        });
 
     </script>
 

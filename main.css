@@ -409,6 +409,7 @@ summary:focus {
     margin-top: -25px;
     margin-bottom: 32px;
     margin-left: 20px;
+    color: black;
 }
 
 .options-sect > button:focus {
@@ -558,6 +559,7 @@ summary > div > p {
     width: 136px;
     font-size: 12px;
     font-weight: normal;
+    color: black;
 }
 
 
@@ -954,6 +956,7 @@ card-btns > button > a {
     float: left;
     margin-top: 16px;
     margin-left: 17px;
+    color: black;
 }
 
 .quick-access {
@@ -1542,7 +1545,7 @@ body.darkclass .material-icons {
 }
 
 body.darkclass .splashscreen {
-    background-color: #111111
+    background-color: black;
 }
 
 body.darkclass .hamburger-menu {
@@ -1597,6 +1600,10 @@ body.darkclass .rounded-btn > button {
 
 body.darkclass summary > div {
     background-color: black;
+}
+
+body.darkclass summary > div > p {
+    color: white;
 }
 
 body.darkclass .options > h4,

@@ -19,6 +19,7 @@ a {
 body {
     font-family: roboto, sans-serif;
     margin: 0px;
+    transition: 0.4s ease;
 
 }
 
@@ -711,6 +712,7 @@ summary > div > p {
     line-height: 23px;
     transition: .3s ease;
     margin-left: 20px;
+    color: black;
 }
 
 .card-btns {
@@ -967,7 +969,7 @@ card-btns > button > a {
     color: #767676;
     float: left;
     padding-left: 9px;
-    margin-top: 4px;
+    margin-top: 1px;
 }
 
 .quick-link > button > p {
@@ -1506,13 +1508,16 @@ card-btns > button > a {
 
 
 body.darkclass {
-    background-color: #111111;
+    background-color: black;
 
 
 }
 
 body.darkclass .header-base {
     background-color: black;
+    border-bottom: solid;
+    border-bottom-width: 1.3px;
+    border-color: #282828;
 }
 
 body.darkclass .navigation-card {
@@ -1524,6 +1529,7 @@ body.darkclass .menu-button > button {
     border: solid;
     border-width: 1.3px;
     color: white;
+
 }
 
 body.darkclass .menu-button > button > p {
@@ -1537,4 +1543,75 @@ body.darkclass .material-icons {
 
 body.darkclass .splashscreen {
     background-color: #111111
+}
+
+body.darkclass .hamburger-menu {
+    background-color: black;
+    border: solid;
+    border-width: 1.3px;
+    border-color: white;
+}
+
+body.darkclass .close-menu {
+    background-color: black;
+    color: white;
+    border: solid;
+    border-width: 1.3px;
+    border-color: white;
+}
+
+body.darkclass .options-sect > button > h3 {
+    color: white;
+}
+
+body.darkclass .navigation-card > p {
+    color: white;
+}
+
+body.darkclass .search-base {
+    background-color: black;
+    border: solid;
+    border-color: white;
+    border-width: 1.3px;
+}
+
+body.darkclass .search-base > button > p {
+    color: white;
+}
+
+body.darkclass .card-divider {
+    height: 0px;
+    background-color: none;
+    border: solid;
+    border-width: 0.8px;
+    border-color: white;
+}
+
+body.darkclass .rounded-btn > button {
+    color: white;
+    background-color: black;
+    border: solid;
+    border-width: 1.3px;
+    border-color: white;
+}
+
+body.darkclass summary > div {
+    background-color: black;
+}
+
+body.darkclass .options > h4,
+p {
+    color: white;
+}
+
+body.darkclass .quick-link > button {
+    background-color: black;
+    border: solid;
+    border-width: 1.3px;
+    border-color: white;
+    color: white;
+}
+
+body.darkclass .quick-link > button > p {
+    color: white;
 }

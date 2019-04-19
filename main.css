@@ -1606,8 +1606,11 @@ body.darkclass summary > div > p {
     color: white;
 }
 
-body.darkclass .options > h4,
-p {
+body.darkclass .options > h4 {
+    color: white;
+}
+
+body.darkclass .options > p {
     color: white;
 }
 

@@ -1641,3 +1641,10 @@ body.darkclass .horizontal-nav {
 body.darkclass button {
     color: white;
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .logo-wrapper {
+        display: none;
+    }
+}

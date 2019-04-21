@@ -1507,7 +1507,9 @@ card-btns > button > a {
 
 
 
-
+body.darkmode .iphone-nav {
+    background-color: black;
+}
 
 
 body.darkclass {
@@ -1643,9 +1645,10 @@ body.darkclass button {
 }
 
 .iphone-nav {
-    position: fixed;top: -75px;
+    position: fixed;
+    top: -75px;
     height: 75px;
-    background-color: white; 
-    width: 100%; 
+    background-color: white;
+    width: 100%;
     z-index: 50;
 }

@@ -1468,7 +1468,7 @@ card-btns > button > a {
     color: #3E3E3E
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1030px) {
     body {
         display: none;
     }

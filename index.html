@@ -98,7 +98,7 @@ Google Calendar
         <div class="hamburger-menu vivify fadeInBottom duration-300 ">
 
 
-
+            <div class="acrylic"></div>
 
 
             <div class="options">
@@ -954,6 +954,14 @@ Google Calendar
 
 
     <script defer src="script.js">
+    </script>
+    <script>
+        var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+        if (iOS = true) {
+            document.getElementsByClassName("logo-wrapper")[0].setAttribute("ios-logo", "iOS-device");
+        }
+
     </script>
     <script>
         AOS.init();

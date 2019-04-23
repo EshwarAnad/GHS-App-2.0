@@ -17,7 +17,7 @@ a {
 }
 
 body {
-    font-family: roboto, sans-serif;
+    font-family: sans-serif;
     margin: 0px;
     transition: 0.4s ease;
 
@@ -1506,9 +1506,7 @@ card-btns > button > a {
 
 
 
-body.darkmode .iphone-nav {
-    background-color: white;
-}
+
 
 
 body.darkclass {

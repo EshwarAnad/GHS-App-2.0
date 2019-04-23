@@ -1581,11 +1581,10 @@ body.darkclass .search-base > button > p {
 }
 
 body.darkclass .card-divider {
-    height: 0px;
-    background-color: none;
-    border: solid;
-    border-width: 0.8px;
-    border-color: white;
+
+    background-color: white;
+
+
 }
 
 body.darkclass .rounded-btn > button {

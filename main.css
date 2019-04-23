@@ -1689,6 +1689,8 @@ body.darkclass button {
     white-space: nowrap;
     border: solid;
     border-color: white;
+    border-width: 1.3px;
+    border-radius: 50px;
 }
 
 #toast #img {
@@ -1705,6 +1707,7 @@ body.darkclass button {
 
     background-color: black;
     color: #fff;
+    border-radius: 50px;
 }
 
 #toast #desc {

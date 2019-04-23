@@ -1687,6 +1687,8 @@ body.darkclass button {
     bottom: 90px;
     font-size: 17px;
     white-space: nowrap;
+    border: solid;
+    border-color: white;
 }
 
 #toast #img {
@@ -1701,7 +1703,7 @@ body.darkclass button {
     box-sizing: border-box;
 
 
-    background-color: #111;
+    background-color: black;
     color: #fff;
 }
 

@@ -1257,7 +1257,9 @@ card-btns > button > a {
     position: relative;
     top: -275px;
     z-index: 38;
-    filter: brightness(0.92)
+    filter: brightness(0.92);
+    height: 222px;
+    object-fit: cover;
 }
 
 .hero-text {

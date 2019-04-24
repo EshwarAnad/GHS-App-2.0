@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GHS App | Admiral Nation</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="css/vivify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="vivify.min.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="Branding/Ios%20App%20Icon.png" type="image/x-icon">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="theme-color" content="#012395">
+    <meta name="apple-mobile-web-app-title" content="GHS App">
+    <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-122866044-3');
+
+    </script>
+
+</head>
+
+<body>
+    <div class="homescreen">
+
+        <div class="header-base" style="box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.1);">
+            <div class="logo-wrapper"><img class="" src="Branding/App%20Logo%20Embed.png"></div>
+
+
+        </div>
+
+        <a href="index.html">
+            <div class="menu-button"><button><i class="material-icons">
+                        arrow_back_ios</i>
+                    <p style="margin-left: 5px;">Home</p>
+                </button></div>
+        </a>
+
+        <div class="spacer" id="spacer"></div>
+
+        <div class="IFRAME"><iframe src="https://docs.google.com/document/d/e/2PACX-1vT5QMd5YjIC_SnNCuZ_Su7-oAtWGykfOh7kWGCkGCh32qlja3gdkVrPZ7on-Z6iQ7WlX_CNeAFizZef/pub?embedded=true"></iframe></div>
+    </div>
+
+
+
+
+
+
+
+    <script defer src="script.js">
+    </script>
+    <script>
+        var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+        if (iOS = true) {
+            document.getElementsByClassName("logo-wrapper")[0].setAttribute("ios-logo", "iOS-device");
+        }
+
+    </script>
+    <script>
+        AOS.init();
+
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+    <script src="sw.js"></script>
+    <script src="Service-Worker.js"></script>
+    <script>
+        $("a").click(function(event) {
+            event.preventDefault();
+            window.location = $(this).attr("href");
+        });
+
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+            var allimages = document.getElementsByTagName('img');
+            for (var i = 0; i < allimages.length; i++) {
+                if (allimages[i].getAttribute('data-src')) {
+                    allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+                }
+            }
+        }, false)
+
+    </script>
+
+    <script>
+        $(document).ready(function($) {
+            var mode = localStorage.getItem('mode');
+            if (mode)
+                $('body').addClass(mode);
+
+            $(".darkmode").click(function() {
+                $("body").addClass("darkclass");
+                localStorage.setItem('mode', 'darkclass');
+            });
+
+            $(".normalmode").click(function() {
+                $("body").removeClass("darkclass");
+                localStorage.setItem('mode', null);
+            });
+        });
+
+    </script>
+
+    <script>
+        window.setTimeout(loaded, 1500);
+        var element = document.getElementById('loader');
+
+        function loaded() {
+            element.style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>

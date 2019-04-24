@@ -776,7 +776,7 @@ card-btns > button > a {
     object-fit: cover;
 
     border: none;
-
+    border-radius: 12px
 }
 
 
@@ -1006,8 +1006,8 @@ card-btns > button > a {
     width: 100%;
     height: 51px;
     background-color: white;
-    position: sticky;
-    top: 46px;
+    position: absolute;
+    top: 245px;
     box-shadow: -1px 9px 5px -5px rgba(0, 0, 0, 0.11);
     z-index: 39;
 }
@@ -1170,9 +1170,9 @@ card-btns > button > a {
 }
 
 .calendar {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    top: 100px;
+  
     height: 100%;
 }
 
@@ -1241,6 +1241,7 @@ card-btns > button > a {
 
 .nav-element.sticky {
     position: fixed;
+    top: 41px;
 }
 
 
@@ -1255,7 +1256,7 @@ card-btns > button > a {
 .hero-image > img {
     width: 100%;
     position: relative;
-    top: -275px;
+    top: -209px;
     z-index: 38;
     filter: brightness(0.92);
     height: 222px;
@@ -1478,13 +1479,15 @@ card-btns > button > a {
 }
 
 #indicator.sticky {
-    position: fixed
+    position: fixed;
+    top: 75px;
+    z-index: 50;
 }
 
 .indicator-container {
-    position: sticky;
+    position: absolute;
     width: 100%;
-    top: 96px;
+    top: 294px;
     z-index: 39;
 }
 

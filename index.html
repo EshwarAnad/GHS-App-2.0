@@ -20,6 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></script>
 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
     <script>
@@ -745,38 +746,54 @@ Google Calendar
 
     <div class="meal-menu">
 
-        <div class="header-base">
+        <div class="header-base" id="header">
             <div class="logo-wrapper"><img src="Branding/App%20Logo%20Embed.png"></div>
 
 
         </div>
 
-        <div class="horizontal-nav">
+        <div class="spacer" style="height: 239px"></div>
+
+        <div class="horizontal-nav nav-element">
             <div class="button-wrapper"><button id="btn-lunch" class="vivify fadeIn" onclick="lunch()">Lunch</button><button class="vivify fadeIn" onclick="breakfast()">Breakfast</button></div>
         </div>
 
 
 
         <div class="lunch-menu">
-            <div class="indicator-container">
+            <div class="indicator-container nav-element">
                 <div class="indicator" style="width: 152px;">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
                 </div>
             </div>
 
+            <div class="hero-image">
+                <div class="hero-text">
+                    <div>
+                        <h2>Meal Menu</h2>
+                    </div>
+                </div><img src="Images/VegNews.VegSchoolLunch.jpg">
+            </div>
 
             <div class="meal-wrapper"><img class=" meal " src="Menu/May%20Lunch.png"></div>
 
-            <div class="lunchanchor" id="lunchanchor"></div>
+            <div class="lunchanchor nav-element" id="lunchanchor"></div>
         </div>
 
         <div class="breakfast-menu">
-            <div class="indicator-container">
+            <div class="indicator-container nav-element">
                 <div class="indicator" style="width: 0px;">
                     <div class="line-indicator vivify pullLeft duration-500"></div>
                 </div>
             </div>
 
+            <div class="hero-image">
+                <div class="hero-text">
+                    <div>
+                        <h2>Meal Menu</h2>
+                    </div>
+                </div><img src="Images/VegNews.VegSchoolLunch.jpg">
+            </div>
 
             <div class="meal-wrapper"><img class=" meal " src="Menu/May%20Breakfast.png"></div>
         </div>
@@ -940,7 +957,25 @@ Google Calendar
     </div>
 
 
+    <script>
+        $(window).scroll(function() {
 
+
+            var scroll = $(window).scrollTop();
+            if (scroll > 400) {
+                $(".nav-element").addClass("sticky");
+            } else {
+                $(".nav-element").removeClass("sticky");
+            }
+
+            if (scroll > 400) {
+                $(".indicator").addClass("sticky");
+            } else {
+                $(".indicator").removeClass("sticky");
+            }
+        });
+
+    </script>
 
 
     <div id="toast">

@@ -1201,7 +1201,7 @@ card-btns > button > a {
 }
 
 .calendar > iframe {
-    height: 100%;
+    height: 74%;
 }
 
 .rounded-btn-wrapper {
@@ -1574,9 +1574,7 @@ body.darkclass {
 
 body.darkclass .header-base {
     background-color: black;
-    border-bottom: solid;
-    border-bottom-width: 1.3px;
-    border-color: #282828;
+
 }
 
 body.darkclass .navigation-card {

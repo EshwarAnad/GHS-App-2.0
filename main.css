@@ -826,7 +826,7 @@ card-btns > button > a {
     border-width: 1.3px;
     border-color: lightgray;
     top: 18.1px;
-   right: 28px;
+    right: 28px;
 }
 
 .popup-menu {
@@ -889,7 +889,7 @@ card-btns > button > a {
     filter: opacity(0.4);
     margin-top: 20px;
     margin-bottom: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: lightgray;
 }
 
 .ad-unit {}

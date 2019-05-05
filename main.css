@@ -129,6 +129,13 @@ form > input:focus {
     border-color: #012395;
 }
 
+input {
+    webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+
+
 a {
     text-decoration: none;
 }

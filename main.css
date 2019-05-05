@@ -129,11 +129,12 @@ form > input:focus {
     border-color: #012395;
 }
 
-input {
-    webkit-appearance: none;
-    box-shadow: none !important;
+input[type=text] {
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
-
 
 
 a {

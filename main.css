@@ -971,7 +971,7 @@ card-btns > button > a {
     background-color: rgba(0, 0, 0, 0.3);
     vertical-align: center;
     padding-top: 86px;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: 0.5s ease;
 }
 

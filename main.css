@@ -120,7 +120,10 @@ input::-webkit-input-placeholder {
 
 input[type=text] {
     padding-left: 19px;
+
 }
+
+
 
 form > input:focus {
     outline: none;
@@ -1464,7 +1467,19 @@ card-btns > button > a {
     width: 100%;
 }
 
+#datetime {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: -32px;
+}
 
+#datetime2 {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: -32px;
+}
 
 .hero-text > div h2 {
     font-weight: normal;

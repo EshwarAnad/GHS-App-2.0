@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -18,327 +17,345 @@
     <meta name="apple-mobile-web-app-title" content="GHS App">
     <link rel="apple-touch-icon" href="Branding/apple-touch-icon.png">
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-122866044-3');
-
+    <script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
     </script>
-    <script>
-        < script >
-            AOS.init();
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/86891052-3092-4d3e-b9fb-8fcdb9859876', function (data) {
+                var template = Handlebars.compile($('#item-template').html())
+                $('#items').html(template(data))
+            })
+        })
+    </script>
+    <script id="item-template" type="text/x-handlebars-template">
 
+    {{#each this}}
+
+    <div class="navigation-card filterDiv {{section}} {{athleticSection}} show">
+        <h5>{{title}}</h5>
+        <h6>{{subTitle}}</h6>
+        <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Image</button>
+        <div class="navigation-image" id={{postID}}></div>
+           
+        <p>{{paragraph}}</p>
+        <div class="button-container">
+             <a href="#" class="waves-effect btn-flat">Learn More</a>
+            </div>
+       
+     </div>
+    
+
+    {{/each}}
+
+</script>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/a8c773a1-a82e-4937-b4e9-1bb04115f46d', function (data) {
+                var template = Handlebars.compile($('#item-template2').html())
+                $('#items2').html(template(data))
+            })
+        })
+    </script>
+    <script id="item-template2" type="text/x-handlebars-template">
+
+{{#each this}}
+
+<div class="navigation-card filterDiv {{section}} {{athleticSection}} show">
+    <h5>{{title}}</h5>
+    <h6>{{subTitle}}</h6>
+    <button class="load-button waves-effect btn-flat" style="height: 200px;" onclick="document.getElementById('{{postID}}').innerHTML = '{{imageURL1}}'">Tap to Load Media</button>
+    <div class="navigation-image" id={{postID}}></div>
+    <iframe src="https://www.youtube.com/embed/kMGrNyAS-70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>{{paragraph}}</p>
+    <div class="button-container">
+         <a href="#" class="waves-effect btn-flat">Learn More</a>
+        </div>
+   
+ </div>
+
+    
+{{/each}}
+
+</script>
+    <script>
+
+
+            < link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" >
+< !--Global site tag(gtag.js) - Google Analytics-- >
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122866044-3"></script>
+
+
+    <script>
+    < script >
+        AOS.init();
     </script>
 
 </head>
 
-<!---
-Google Calendar
-
-<a data-aos="fade-up" class="calendar-btn " target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=N3IwcGdjZGc1bGplNTdzc3JjbG9saXFyMjAgamFjb2J5YnJvYWRuYXguamJAbQ&amp;tmsrc=jacobybroadnax.jb%40gmail.com"><i class="material-icons">
-
-                    add_circle_outline</i><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo-yhBmNa5Bb6AnbCBxfvoPWwmwQYaIOVvdnTiU6XLt3P36WECRA:https://dcnxfkgt2gjxz.cloudfront.net/Logos/Integration-Card-Logos/integrationcards-googlecalendar.svg"></a> 
---->
-
 <body>
-
-    <div class="splashscreen vivify delay-1500 fadeOut" id="loader">
-        <div class="splash-logo vivify popOut delay-1000" style="margin-top: 350px;"><img class="" style="left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);width: 40%;" src="Branding/Logo filled.svg"></div>
-    </div>
-
-    <div class="univ-menu">
-
-        <button class="menu-cover " onclick="collapse()">
-
-        </button>
-
-
-        <div class="search-link">
-            <div class="search-base">
-                <button onclick="searchopen()"><i class="material-icons">search</i>
-                    <p>Find A Teacher</p>
-                </button></div>
+    <nav style="background-color: white;">
+        <div class="logo-container"><img src="Branding/App Logo Embed.png">
         </div>
-
-
-
-        <div class="quick-access">
-
-            <a href="#">
-                <div class="quick-link vivify fadeIn">
-                    <button onclick="rightpress()"> <i class="material-icons">fitness_center</i>
-                        <p>Athletics</p>
-                    </button>
-
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="quick-link vivify fadeIn">
-                    <button onclick="leftpress()"><i class="material-icons">live_tv</i>
-                        <p>Live</p>
-                    </button>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="quick-link vivify fadeIn">
-                    <button onclick="homepress()"> <i class="material-icons">home</i>
-                        <p>Home</p>
-                    </button>
-
-                </div>
-            </a>
-
-
-
-        </div>
-
-        <button class="close-menu" onclick="collapse()">Close</button>
-
-
-        <div class="hamburger-menu vivify fadeInBottom duration-300 ">
-
-
-
-            <div class="menu-cover"></div>
-
-            <div class="options">
-
-
-
-                <h4>GHS App</h4>
-                <p>Quick Menu</p>
-
-
-
-
-                <a href="https://261985.stiinformationnow.com/InformationNow/Login.aspx?ReturnUrl=%2fInformationNow%2fMobile%2fGradeBook.List.aspx" target="_self">
-                    <div class="options-sect">
-                        <button>
-                            <i class="material-icons menu-icon">school</i>
-                            <h3>Check My Grades</h3>
-
-                        </button>
-
-                    </div>
-                </a>
-
-
-                <a href="#">
-                    <div class="options-sect">
-                        <button onclick="meal()">
-                            <i class="menu-icon material-icons">
-
-                                restaurant</i>
-                            <h3>Meal Menu</h3>
-
-                        </button>
-
-
-                    </div>
-                </a>
-
-
-
-                <a href="#">
-                    <div class="options-sect" onclick="kahoot()">
-                        <button>
-                            <i class="menu-icon material-icons">
-                                date_range
-                            </i>
-                            <h3> School Calendar</h3>
-
-                        </button>
-
-                    </div>
-                </a>
-
-
-
-                <a href="Admiralnation.html">
-                    <div class="options-sect">
-                        <button>
-                            <i class="menu-icon material-icons">
-
-                                shopping_cart</i>
-                            <h3>Shop School Store</h3>
-
-                        </button>
-
-                    </div>
-                </a>
-
-
-
-
-
-
-
-
-
-
-                <a href="https://payments.efundsforschools.com/v3/districts/56099" target="_self">
-                    <div class="options-sect">
-                        <button>
-                            <i class="material-icons menu-icon">credit_card</i>
-                            <h3>Pay Fees/Lunch</h3>
-
-                        </button>
-
-                    </div>
-                </a>
-
-            </div>
-
-
-        </div>
-
-
-    </div>
-
-
-
-    <div class="menu-button"><button onclick="expand()" class="vivify"><i style="font-size: 26px;" class="material-icons">
-                menu</i>
-            <p>Menu</p>
-        </button>
-
-    </div>
-
-
-    <div class="iphone-nav"></div>
-	
-	<div class="moving" style="width: 100%; height: 100%; position: fixed; background-color:white;z-index: 1000;top: 50px; ">
-	<div class="header-base">
-        <div class="logo-wrapper"><img class="" src="Branding/App%20Logo%20Embed.png"></div>
-
-
-    </div>
-	<div class="move-text" style="margin: auto; width: 330px;">
-	<h3>This Version Of The GHS App Is No Longer Supported</h3><p>To further improve the GHS App with push notifications, improved load times, and many other new features, we are moving to the Apple Appstore and Google Play. Tap the button below to download.</p><a href="http://onelink.to/7dycvs"><button style="width: 100%; background-color:white; height: 45px; border: solid; border-width: 1.3px; border-color: lightgray; border-radius: 100px;">Download</button></a></div>
-	</div>
-	
-
-    <div class="homescreen vivify fadeIn">
-
-
-
-
-
-
-
-
-
-        <script>
-            function news() {
-
+        <a href="#search" class="search-btn"><i class="material-icons">search</i></a>
+    </nav>
+
+    <section id="homescreen" >
+        <div class="inline-spacer"></div>
+        <div class="spacer"></div>
+
+        <style>
+            .tabs .indicator {
+                background-color: #012395;
             }
 
-        </script>
-        <div class="card-divider"></div>
+            .tabs .tab a.active {
+                background-color: white;
+                color: #012395;
+            }
 
-
-
-        <div class="navigation-card cd1  help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">Student Council Candidates
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">Student Council
-                    </h4>
+            .tabs .tab a {
+                color: #000;
+            }
+        </style>
+        <div class="row">
+            <div class="tab-navigation">
+                <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a href=""><button class="waves-effect tab-button"
+                                    onclick="filterSelection('all')">HOME</button></a></li>
+                        <li class="tab col s3"><a href="#media"><button class="waves-effect tab-button"
+                                    onclick="filterSelection('media')">MEDIA</button></a></li>
+                        <li class="tab col s3"><a href="#news"><button class="waves-effect tab-button"
+                                    onclick="filterSelection('news')">NEWS</button></a>
+                        </li>
+                        <li class="tab col s3"><a href="#sports"><button class="waves-effect tab-button"
+                                    onclick="filterSelection('sports')">SPORTS</button></a></li>
+                    </ul>
                 </div>
-            </a>
+            </div>
+           
+            <div class="tab-items">
+                <div id="inbox" class="col s12">
 
-            <div class="swipe-menu"><iframe width="149px" height="229px;" style="border:none; margin-left: 17px;border-radius: 12px;" loading="lazy" src="https://drive.google.com/file/d/1ETF7bxJx5tOrww4SHSFX9s0sLKJdFdXC/preview" allowfullscreen="true"></iframe><iframe width="149px" height="229px;" style="border:none; margin-left: 17px;border-radius: 12px;" loading="lazy" src="https://drive.google.com/file/d/1yGnsPLlQcr2WA3GbUo1CFIPfMvzl33cx/preview" allowfullscreen="true"></iframe><iframe width="149px" height="229px;" style="border:none; margin-left: 17px;border-radius: 12px;" loading="lazy" src="https://drive.google.com/file/d/1iKbrQx_vZUZCfibo_dvRUgO2qR3vMf-H/preview" allowfullscreen="true"></iframe></div>
 
-            <p>Senior, Junior, and Sophmore student council candidates videos are watchable above. </p>
+                    <div id="sports" class="filter">
+                        <button class="waves-effect baseball" onclick="filterSelection('baseball')">Baseball</button>
+                        <button class="waves-effect" onclick="filterSelection('football')">Football</button>
+                        <button class="waves-effect" onclick="filterSelection('volleyball')">VolleyBall</button>
+
+                        <button class="waves-effect" onclick="filterSelection('gbasketball')">Girls Basketball</button>
+                        <button class="waves-effect" onclick="filterSelection('bowling')">Bowling</button>
+                        <button class="waves-effect" onclick="filterSelection('swimming')">Swimming</button>
+                        <button class="waves-effect" onclick="filterSelection('crosscountry')">Cross Country</button>
+
+                        <br>
+                        <button class="waves-effect" onclick="filterSelection('bbasketball')">Boys Basketball</button>
+                        <button class="waves-effect" onclick="filterSelection('cheerleading')">Cheerleading</button>
+                        <button class="waves-effect" onclick="filterSelection('golf')">Golf</button>
+                        <button class="waves-effect" onclick="filterSelection('bsoccer')">Boys Soccer</button>
+                        <button class="waves-effect" onclick="filterSelection('gsoccer')">Girls Soccer</button>
+                        <button class="waves-effect" onclick="filterSelection('softball')">Softball</button>
+
+                        <button class="waves-effect" onclick="filterSelection('tennis')">Tennis</button>
+                        <button class="waves-effect" onclick="filterSelection('trackfield')">Track And Field</button>
+
+                    </div>
+
+                    <div id="news" class="filter filterDiv news" style="height: 50px;">
+                        <button class="waves-effect" onclick="filterSelection('freshman')">9th (Freshman)</button>
+                        <button class="waves-effect" onclick="filterSelection('sophmore')">10th (Sophmore)</button>
+                        <button class="waves-effect" onclick="filterSelection('junior')">11th (Junior)</button>
+
+                        <button class="waves-effect" onclick="filterSelection('senior')">12th (Senior)</button>
+                    
+                    </div>
+
+                    <div id="media" class="filter filterDiv media" style="height: 50px;">
+                            <button class="waves-effect" onclick="filterSelection('live')">Live Games</button>
+                        <button class="waves-effect" onclick="filterSelection('art')">GHS Art</button>
+                        <button class="waves-effect" onclick="filterSelection('podcast')">Podcast</button>
+                        <button class="waves-effect" onclick="filterSelection('videos')">Videos</button>
+
+                     
+                    
+                    </div>
+                    <div class="card-divider"></div>
+
+                    <div class="navigation-card-container">
+                        <div id="items"></div>
+                        <div id="items2"></div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i]; }
+      }
+    }
+    
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+                    </script>
+            </div>
 
         </div>
 
-        <div class="card-divider"></div>
 
-        <div class="navigation-card cd1  help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">GHS Graduation Ceremony
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">Gulfport High School | May 22nd
-                    </h4>
-                </div>
-            </a>
-
-            <div class="card-wrapper">
-                <h3 data-aos="fade-in" data-aos-delay="300">Graduation</h3><img class="card-img" loading="lazy" src="Images/baim-hanif-89800-unsplash.jpg">
-            </div>
-
-            <p>Mandatory Dress Rehearsal for graduation is at 8:30am at the Mississippi Gulf Coast Coliseum. Come fully
-                dressed in your cap and gown, wear the shoes you will be wearing at graduation to make sure you can walk in
-                them. Graduation photos will be taken immediately following dress rehearsal in the rear of the Coliseum. Learn more by taping the button below. </p>
-            <div class="rounded-btn-wrapper" style="width: 182px;margin-bottom: 81px;"> <a href="https://www.gulfportschools.org/cms/lib/MS01910520/Centricity/Domain/17/graduation%20reminders%202019%20revised.pdf" class="rounded-btn" target="_blank"><button>Learn More</button></a>
-
-            </div>
         </div>
 
-        <div class="card-divider"></div>
 
-        <div class="navigation-card cd1  help" data-aos="fade-up">
-
+    </section>
 
 
-            <h3 style="margin-left: 23px;">Try New Dark Mode
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">GHS App | Experimental
-                    </h4>
+
+
+
+
+
+
+
+    <section id="meal-menu">
+        <div class="spacer"></div>
+        <div class="row">
+            <div class="tab-navigation">
+                <div style="position: fixed;width: 100%;top: 55px;left: 0px;;" class="" style="padding: 0px;">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a href="#lunch"><button
+                                    class="waves-effect tab-button XL">LUNCH</button></a></li>
+                        <li class="tab col s3"><a href="#breakfast"><button
+                                    class="waves-effect tab-button XL">BREAKFAST</button></a></li>
+
+                    </ul>
                 </div>
-            </a>
-
-            <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;">
-                <div class="rounded-btn"><button onclick="launch_toast()" class="darkmode">Enable</button></div>
-                <div class="rounded-btn"><button class="normalmode">Disable</button></div>
+            </div>
+            <div class="tab-items">
+                <div id="lunch" class="col s12"><div class="menu-overflow"><img src="Menu/Menu Plan Calendar-1.png"></div></div>
+                <div id="breakfast" class="col s12">Breakfast</div>
 
             </div>
+
+
+        </div>
+        Mealmenu
+    </section>
+
+
+
+
+
+
+
+
+    <section id="shop">
+        <div class="spacer"></div>
+        Shop
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="calendar">
+        <div class="spacer"></div>
+        <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=ZGlzdHJpY3QuY2FsZW5kYXJAZ3VsZnBvcnRzY2hvb2xzLm9yZw&amp;src=Z3VsZnBvcnRzY2hvb2xzLm9yZ19nOGtoNzljcjhzcWJpcGVqdm0yYzliYzBqc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%238E24AA&amp;color=%233F51B5&amp;color=%230B8043&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
+            style="border-width:0;position: fixed; top: 0px;width:100%; height:100%" frameborder="0"
+            scrolling="no"></iframe>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="media">
+
+        <div class="spacer"></div>
+        <div class="inline-spacer" style="height: 55px;"></div>
+        <h5>Settings</h5>
+        <div class="settings-option">
+
+            <div><a onclick="launch_toast()" class="darkmode waves-effect btn blue darken-4">Enable</a></div>
+            <div><a class="normalmode waves-effect btn-flat">Disable</a></div>
+
+
 
 
 
             <script>
                 $(document).ready(function($) {
                     var mode = localStorage.getItem('mode');
-                    if (mode)
-                        $('body').addClass(mode);
-                    $('accent').addClass(mode);
+        if (mode)
+            $('body').addClass(mode);
+        $('accent').addClass(mode);
 
                     $(".darkmode").click(function() {
-                        $("body").addClass("darkclass");
-                        $("accent").addClass("darkclass");
-                        localStorage.setItem('mode', 'darkclass');
-                    });
+            $("body").addClass("darkclass");
+        $("accent").addClass("darkclass");
+        localStorage.setItem('mode', 'darkclass');
+    });
 
                     $(".normalmode").click(function() {
-                        $("body").removeClass("darkclass");
+            $("body").removeClass("darkclass");
                         $("accent").removeClass("darkclass");
-                        localStorage.setItem('mode', null);
-                    });
-                });
+        localStorage.setItem('mode', null);
+    });
+});
 
             </script>
         </div>
+    </section>
 
 
 
@@ -347,914 +364,53 @@ Google Calendar
 
 
 
-        <div id="podcast" class="popup-menu vivify pullUp">
-            <div>
-                <div class="content-container">
-                    <div class="navigation-card">
-                        <h3 style=" position: fixed;background-color:white;height: 49.3px;width: 100%;padding-left: 23px;padding-top: 10px;margin-top: 0px;z-index: 100;">Behind the Faces | Podcast</h3><a href="#">
-                            <div>
-                                <h4 style="margin-left: 23px;position: fixed;margin-top: 31.1px;z-index: 101;">Student Council
-                                </h4>
-                            </div>
-                        </a>
 
-                        <a href="#"><button class="popup-button">Close</button></a>
-
-
-                        <div class="spacer" style="height: 60px;"></div>
-
-                        <div class="card-wrapper" style="width: 100%; "><img style="border-radius: 0px;" class="card-img" src="images/behindthefaces.png"></div>
-                    </div>
-
-                    <div class="navigation-card cd1 vivify fadeInLeft">
-
-                        <h3 style="margin-left: 23px;">Light at the End of the Tunnel
-                        </h3>
-                        <a href="#">
-                            <div>
-                                <h4 style="margin-left: 23px">Episode 1 | 5:37
-                                </h4>
-                            </div>
-                        </a>
-
-
-
-                        <div class="audio-wrapper"><audio controls>
-                                <source src="Podcast/Episode 1 - Light at the End of the Tunnel  .mp3">
-
-                            </audio></div>
-
-
-
-                        <p class="vivify fadeIn">Facing a life - threatening disease can be difficult but there are lessons to be found in the darkness. </p>
-
-
-
-
-                    </div>
-
-                    <div class="card-divider"></div>
-
-                    <div class="navigation-card cd1 vivify fadeInLeft delay-100">
-
-                        <h3 style="margin-left: 23px;">Falling to Pieces
-                        </h3>
-                        <a href="#">
-                            <div>
-                                <h4 style="margin-left: 23px">Episode 2 | 6:09
-                                </h4>
-                            </div>
-                        </a>
-
-
-
-                        <div class="audio-wrapper"><audio controls class="">
-                                <source src="Podcast/Episode 2 - Falling to Pieces.mp3" />
-
-                            </audio></div>
-
-
-
-                        <p class="vivify fadeIn">So much of what we see in the mirror affects how we feel about ourselves. Family and friends help us get through.</p>
-
-
-
-
-                    </div>
+    <section id="athletics">
+        <div class="spacer"></div>
+        Athletics
+    </section>
 
 
 
 
 
-                    <div class="classic-cardivider"></div>
 
 
-                </div>
-            </div>
+
+
+    <section id="podcast">
+        <div class="spacer"></div>
+        Podcast
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="search">
+        <div class="spacer"></div>
+
+    </section>
+
+    <div class="bottom-navigation">
+        <div class="nav-container">
+            <a href="#homescreen"><button onclick="filterSelection('all')" class="nav-button waves-effect"
+                    autofocus><img src="Assets/Home.svg"></button></a>
+            <a href="#meal-menu"><button class="nav-button waves-effect"><img src="Assets/Menu.svg"></button></a>
+
+            <a href=""><button class="nav-button waves-effect"><img src="Assets/Grades.svg"></button></a>
+            <a href="#calendar"><button class="nav-button waves-effect"><img src="Assets/Calendar.svg"></button></a>
+            <a href="#media"><button class="nav-button waves-effect"><img src="Assets/Settings.svg"></button></a>
         </div>
-
-
-        <div class="card-divider"></div>
-
-
-        <div class="navigation-card cd1  help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">
-                <marquee style="width: 110px;">Translate Traducir 翻译 Traduire</marquee>
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">GHS App Help
-                    </h4>
-                </div>
-            </a>
-
-
-
-
-
-
-
-
-
-
-            <div id="google_translate_element" style="position: absolute; top: -3px;margin-left: 190px;z-index: 500"></div>
-
-            <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({
-                        pageLanguage: 'en'
-                    }, 'google_translate_element');
-                }
-
-            </script>
-
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-
-
-
-        </div>
-
-
-
-        <div class="card-divider"></div>
-
-
-        <div class="navigation-card cd1  help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">Behind the Faces | Podcast
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">Student Council
-                    </h4>
-                </div>
-            </a>
-
-
-            <div class="card-wrapper">
-                <h3 data-aos="fade-in" data-aos-delay="300">Podcast</h3><img class="card-img" style="object-fit: cover;" src="images/behindthefaces.png" />
-            </div>
-
-
-
-
-
-
-            <p>Listen to the storys told by students just like you. Episode 2 now available.</p>
-
-
-
-            <div class="rounded-btn-wrapper" style="width: 182px;margin-bottom: 81px;"> <a href="#podcast" class="rounded-btn" target="_blank"><button>Listen Now</button></a>
-
-
-
-
-
-            </div>
-        </div>
-
-
-
-
-
-        <div id="teamfusion" class="popup-menu vivify pullUp">
-            <div>
-                <div class="content-container">
-                    <div class="navigation-card">
-
-
-
-                        <h3 style=" position: fixed;background-color:white;height: 49.3px;width: 100%;padding-left: 23px;padding-top: 10px;margin-top: 0px;z-index: 100;">Interested In Robotics?</h3><a href="#">
-                            <div>
-                                <h4 style="margin-left: 23px;position: fixed;margin-top: 31.1px;z-index: 101;">Team Fusion
-                                </h4>
-                            </div>
-                        </a>
-
-                        <a href="#"><button class="popup-button">Close</button></a>
-
-
-                        <div class="spacer" style="height: 60px;"></div>
-
-
-                    </div>
-
-                    <div class="iframe-menu" style="margin-top: -6px;">
-                        <iframe loading="lazy" src="https://www.fusion364.com/index"></iframe>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="card-divider"></div>
-
-
-
-
-
-
-
-        <div class="navigation-card cd1  help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">Interested In Robotics?
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">Team Fusion
-                    </h4>
-                </div>
-            </a>
-
-            <div class="card-wrapper">
-                <h3 data-aos="fade-in" data-aos-delay="300">Team Fusion | Robotics</h3><img loading="lazy" class="card-img" src="Images/2019_Awards.jfif">
-            </div>
-
-
-            <div class="rounded-btn-wrapper" style="width: 182px;margin-bottom: 81px;"> <a href="#teamfusion" class="rounded-btn" target="_blank"><button>Learn More</button></a>
-
-            </div>
-        </div>
-
-
-        <div class="card-divider"></div>
-
-
-        <div class="navigation-card cd1  help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">School Store Sale | Entire Store 20% Off
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">Admiral Nation
-                    </h4>
-                </div>
-            </a>
-
-
-
-            <div class="swipe-menu" style="margin-top: 10px;"><img loading="lazy" src="ShopItems/Quarter Zip Thumbnail.jpg" /><img loading="lazy" src="ShopItems/T-Shirt1 Thumbnail.jpg"><img loading="lazy" src="ShopItems/Sweatshirt Thumbnail.jpg" /><img loading="lazy" src="ShopItems/Beanie Thumbnail.jpg" />
-
-            </div>
-
-            <div class="rounded-btn-wrapper" style="width: 182px;margin-bottom: 81px;"> <a href="https://admiralnation.github.io/SHOP/" class="rounded-btn" target="_blank"><button>Visit Site</button></a>
-
-            </div>
-        </div>
-
-
-
-
-
-
-
-        <div class="card-divider"></div>
-
-        <div class="art-container"><img loading="lazy" id="view" class="target-element" src="Images/IMG_20190509_104622.jpg"></div>
-
-        <div class="navigation-card cd1  help" id="spanclose" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">GHS Art
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">Art
-                    </h4>
-                </div>
-            </a>
-
-            <a href="#close-btn">
-                <div class="swipe-menu" style="margin-top: 10px;"><a href="#view"><img loading="lazy" style="border: none;" src="Images/art1.png" /></a>
-                    <a href="#view2"><img loading="lazy" id="view2" style="border: none;" src="images/art2.png"></a><img loading="lazy" style="border: none;" src="images/IMG-1474-min.JPG" /><img loading="lazy" style="border: none;" src="images/IMG-1475-min.JPG" />
-
-                </div>
-            </a>
-            <div id="close-btn"><a href="#spanclose"><button style="z-index: 501; top: 75px;" class="popup-button">Close</button></a></div>
-
-
-
-            <p style="margin-top: 6px;">
-
-
-
-
-
-                These young ladies have the potential to travel to Dallas, Texas to compete for Nationals in June. I’m
-                very proud of our future teachers!
-
-                Please congratulate them! There was a lot of competition in each category. </p>
-
-
-        </div>
-
-        <div class="art-container"><img loading="lazy" id="view" src="Images/IMG_20190509_104622.jpg"></div>
-
-
-
-
-        <div class="card-divider"></div>
-
-
-
-        <div class="navigation-card cd1  help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">Educators Rising Competition
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">Educators Rising
-                    </h4>
-                </div>
-            </a>
-
-            <div class="marquee-wrapper">
-                <marquee style="margin-top: 15px;">1st place: “Inside Our Schools: GHS” video- Madison Peeples and Emily
-                    Smith &emsp; 4th Place: Children’s Literature (K-3): Meshayonia Hart (Author and illustrator) &emsp;
-                    5th Place: Impromptu Speaking: Jaquanda Jackson &emsp; 5th Place: Impromptu Speaking: Jaquanda
-                    Jackson </marquee>
-            </div>
-
-            <div class="swipe-menu" style="margin-top: 10px;"><img loading="lazy" style="border: none;" src="images/IMG-1473-min.JPG" /><img loading="lazy" style="border: none;" src="images/IMG-1477-min.JPG"><img loading="lazy" style="border: none;" src="images/IMG-1474-min.JPG" /><img loading="lazy" style="border: none;" src="images/IMG-1475-min.JPG" />
-
-            </div>
-
-
-
-
-            <p style="margin-top: 6px;">
-
-
-
-
-
-                These young ladies have the potential to travel to Dallas, Texas to compete for Nationals in June. I’m
-                very proud of our future teachers!
-
-                Please congratulate them! There was a lot of competition in each category. </p>
-
-
-        </div>
-
-
-
-
-
-
-
-        <div class="card-divider"></div>
-
-
-
-
-
-
-
-
-
-
-        <div class="navigation-card cd1 vivify fadeIn delay-100 help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">Give Feedback | Help Improve The GHS App
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">GHS App
-                    </h4>
-                </div>
-            </a>
-
-            <span class="likebtn-wrapper" data-identifier="item_1"></span>
-
-
-            <div class="rounded-btn-wrapper" style="margin-bottom: 77px;width: 182px; "> <a href="https://goo.gl/forms/DhvAH3uesqBiV3JD3" class="rounded-btn" target="_blank"><button>Give
-                        Feedback</button></a>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <div class="card-divider"></div>
-
-
-
-
-
-
-
-
-        <div class="navigation-card cd1 vivify fadeIn delay-100 help" data-aos="fade-up">
-
-            <h3 style="margin-left: 23px;">Back To Top
-            </h3>
-            <a href="#">
-                <div>
-                    <h4 style="margin-left: 23px">GHS App - Help
-                    </h4>
-                </div>
-            </a>
-
-            <div class="rounded-btn-wrapper" style="margin-bottom: 73px;width: 182px;"> <a href="#" class="rounded-btn"><button>Back To Top</button></a>
-
-            </div>
-        </div>
-
-        <div class="card-divider"></div>
-
-        <div class="spacer" style="margin-bottom: 25px;"></div>
-
-
-        <div class="privacy-policy"><a href="privacy%20policy.html" target="self">
-
-                <p>Tap To View Privacy Policy</p>
-            </a></div>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="media-sect">
-
-
-
-
-
-
-
-        <div class="live-sect vivify fadeIn">
-
-
-            <div class="card-wrapper" style="border-radius: 15px"><iframe loading="lazy" class="card-img" style="margin-top: 55px" src="https://c.themediacdn.com/embed/media/O7sBCQ/OqvzSehCsA1/mrLrvlwsOOb_5?wmode=opaque" allowfullscreen></iframe></div>
-
-
-            <div class="navigation-card cd1 " data-aos="fade-up">
-
-                <h3 style="margin-left: 23px;">Live Stream
-                </h3>
-                <a href="#">
-                    <div>
-                        <h4 style="margin-left: 23px">Presented By Admiral Nation.com | WGTV
-                        </h4>
-                    </div>
-                </a>
-
-
-
-                <div class="rounded-btn-wrapper" style="margin-top: 22px;margin-bottom: 77px;"> <a href="https://admiralnation.github.io/SHOP/" class="rounded-btn"><button>Shop Admiral
-                            Nation</button></a>
-                    <a href="https://www.admiralnation.com/archives/" class="rounded-btn"><button>View Archived
-                            Games</button></a></div>
-
-
-
-            </div>
-
-            <div class="navigation-card"></div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-    <div class="athletic-sect">
-
-
-
-        <div class="horizontal-nav nav-element">
-            <a href="#">
-                <div class="button-wrapper" style="width: 169px;"><button class="vivify fadeIn" id="btn-schedule" onclick="schedule()">Schedule</button><button class="vivify fadeIn" style="width: 84px;" onclick="site()">Athletic App</button></div>
-            </a>
-
-        </div>
-
-
-        <div class="hero-image" style="margin-top: 53px;">
-            <div class="hero-text">
-                <div>
-                    <h2>Athletics</h2>
-                </div>
-            </div><img style="top: 0px;" loading="lazy" src="https://www.sunherald.com/latest-news/t8zgqo/picture219105860/alternates/FREE_1140/0927%20derick%20hall.jpg">
-        </div>
-
-
-        <div class="calendar">
-            <div class="indicator-container nav-element">
-                <div class="indicator" style="width: 162px;">
-                    <div class="line-indicator vivify pullLeft duration-500"></div>
-                </div>
-            </div>
-
-            <div class="spacer"></div>
-
-
-
-            <iframe loading="lazy" style="margin-top: -30px;" class=" " src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=gulfportschools.org_g8kh79cr8sqbipejvm2c9bc0js%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FChicago" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-
-
-
-        <div class="site">
-            <div class="indicator-container nav-element">
-                <div class="indicator" style="width: 0px;">
-                    <div class="line-indicator vivify pullLeft duration-500"></div>
-                </div>
-            </div>
-            <div class="navigation-card cd1  " style="margin-top: 161px;margin-bottom: 150px;" data-aos="fade-up">
-
-                <img class="card-icon" loading="lazy" src="Card-Icons/unnamed.webp">
-
-                <h3 style="margin-left: 23px;">Get The Gulfport Admirals Athletics App
-                </h3>
-                <a href="#">
-                    <div>
-                        <h4 style="margin-left: 23px">By Mascot Media, LLC
-                        </h4>
-                    </div>
-                </a>
-
-                <div class="card-wrapper"><img loading="lazy" class="card-img" style="height:675px;" src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/c7/4b/63/c74b6306-50a3-99c4-9cb9-e0303161c406/mzl.aiapeqvi.png/300x0w.jpg"></div>
-
-
-                <p>Fans of the Admirals can now stay up to date around the clock from the convenience of their iOS or
-                    Android device. Can’t make it to the game? Watch the LIVE broadcast. Need to know the score of last
-                    night’s game? Use the app to find breaking news, rosters, upcoming games and much more.</p>
-
-                <div class="rounded-btn-wrapper"> <a href="https://play.google.com/store/apps/details?id=com.sidelineaccess.msgulfport&hl=en_US" class="rounded-btn"><button>Get It For Android</button></a>
-                    <a href="https://itunes.apple.com/us/app/gulfport-admirals-athletics/id1399724155?mt=8" class="rounded-btn"><button>Get It For IOS</button></a></div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="meal-menu">
-
-
-
-        <div class="spacer" style="height: 239px"></div>
-
-        <div class="horizontal-nav nav-element">
-            <a href="#">
-                <div class="button-wrapper"><button id="btn-lunch" class="vivify fadeIn" onclick="lunch()">Lunch</button><button class="vivify fadeIn" onclick="breakfast()">Breakfast</button></div>
-            </a>
-
-        </div>
-
-
-
-        <div class="lunch-menu">
-            <div class="indicator-container nav-element">
-                <div class="indicator" style="width: 152px;">
-                    <div class="line-indicator vivify pullLeft duration-500"></div>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <div class="hero-text">
-                    <div>
-                        <h2>Meal Menu</h2>
-                        <p id="datetime"></p>
-
-                        <script>
-                            var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-</script>
-                    </div>
-                </div><img loading="lazy" src="Images/VegNews.VegSchoolLunch.jpg">
-            </div>
-
-            <div class="meal-wrapper"><img loading="lazy" class=" meal " src="Menu/May%20Lunch.png"></div>
-
-            <div class="lunchanchor nav-element" id="lunchanchor"></div>
-        </div>
-
-        <div class="breakfast-menu">
-            <div class="indicator-container nav-element">
-                <div class="indicator" style="width: 0px;">
-                    <div class="line-indicator vivify pullLeft duration-500"></div>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <div class="hero-text">
-                    <div>
-                        <h2>Meal Menu</h2>
-                        <p id="datetime2"></p>
-
-                        <script>
-                            var dt = new Date();
-document.getElementById("datetime2").innerHTML = dt.toLocaleDateString();
-</script>
-                    </div>
-                </div><img loading="lazy" src="Images/VegNews.VegSchoolLunch.jpg">
-            </div>
-
-            <div class="meal-wrapper"><img loading="lazy" class=" meal " src="Menu/May%20Breakfast.png"></div>
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="admiralnation-sect vivify fadeIn">
-
-    </div>
-
-
-
-    <div class="kahoot-sect">
-
-
-
-        <iframe loading="lazy" style="margin-top: 55px;" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=district.calendar%40gulfportschools.org&amp;color=%2342104A&amp;src=gulfportschools.org_g8kh79cr8sqbipejvm2c9bc0js%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FChicago" style="border-width:0" width="360" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-
-
-    <div class="search-sect">
-
-        <div class="close-btn"><button onclick="searchclose()">Cancel</button></div>
-        <input class="search-input vivify popIn" style="padding-left:25px; " type="text" id="mySearch" onkeyup="myFunction()" placeholder="&emsp; Find A Teacher..." title="Type in a teacher">
-        <ul id="myMenu" class="teacher-list">
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="Acey, Randee - Special Education">Acey, Randee - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2050">Anderson, Faith - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2051">Archie, John - Physical Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/848">Austin, David - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2052">Barry, Mary Kathryn - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1184">Batson, Shanna - English HHS</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2053">Bauer, Michele - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1719">Bennett, Stephanie - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/849">Bodenhamer, Reynolds - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1187">Brawley, Clinton - Engineering/Robotics STEM</a>
-            </li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2054">Brenneis, Angela - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1141">Brooks, Tania - Science</a></li>
-            <li><a style="text-decoration: none" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/780">Brown, Chad - Art</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/685">Brown, Jimi - Fine Arts</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/835">Buntyn, Ellen - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/851">Bush, Jeffrey - History CAB</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1781">Callahan, Jennifer - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/861">Carraway, Robin - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/872">Caylor, Robert - Automotive Service Technology
-                    STEM</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Page/15838">Celentano, Shana - Librarian</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1775">Chambliss, Jacob - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1974">Cilliers, Glenda - ELL</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/816">Clark, Crystal - Math</a> </li>
-            <li> <a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2055">Combs, Meaghan - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/837">Cordray, Jack - Science HHS</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1587">Cordray, Sharon - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1588">D'Angelo, Micky - Physical Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/862">Darden, Angelitta - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2056">Dedeaux, Heidi - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/786">Dodson, Theary - Business</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1590">Dove, Kelsie - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2186">Dukeman, Sarah - Choir</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1632">Dunlap, Jessica - Choir</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1928">Edwards, Daniele - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/753">Elward, Kyle - Digital Media Technology</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/819">Estrada, Angie - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1809">Ferreira, Sasha - Strings</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1179">Flores, Edith - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1111">Gault, Nick - Academic Business</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/820">Gemelli, Mike - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1929">Glass, Brooke - Health</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1783">Haarala, Zachary - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1231">Hardin, Brad - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/789">Hart, Larry - Fine Arts</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/854">Hatch, Savannah - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1793">Helms, Kevin-Michael - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2057">Henshaw, Andrea - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1937">Holman, Rachael - Law and Safety</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1784">Hoye, Emily - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/839">Hoyt, Bruce - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/874">Huffman, Dave - Construction Technology STEM</a>
-            </li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1930">Hutchins, Jan - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1976">Irwin, David - Odyssey</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1931">Kelley, Desiree - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2122">Knight, Violet - Special Eduation</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2058">Ladner, Courtney - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1932">Lahuta, Jennifer - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1786">Lassabe, Lauren - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2059">Latham, Courtnie - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1503">Lawrence, Joseph - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1222">Lee, Amy - Business Marketing CAB</a> </li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/802">Lee, Blanca - Spanish</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1828">Leska, Malgorzata - Strings</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1603">Lewakowski, Melinda - Health Science HHS</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1595">Lewis, Chelsea - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/793">Lopez, Jessica - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1230">Lopez, John - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1173">Lynch, Treasure - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1232">Martinez, Daniel - Fine Arts</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1726">McKenna, Tammy - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/829">McMahon, James - Physical Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1620">Middleton, Reginald - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1596">Miller, Owen - Physical Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/785">Morehead, Westley - Fine Arts</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1229">Myrick, Kelsey - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/813">Neumann, Alan - ROTC</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/814">Owens, John - ROTC</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1180">Payne, Meredith - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/782">Pecoul, Laura - Art</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/843">Pfaff, Scott - Science STEM</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/740">Pitts, Dee Dee - Fine Arts</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/783">Polson, Marshall - Art</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/794">Pryor, Christopher - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1788">Rodriguez, Danielle - Culinary Arts</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/846">Rogers, Amanda - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/795">Rogers, Beth - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/796">Rogers, Wesley - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/797">Salminen, Tina - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1934">Sheckart, Rachel - Art</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1804">Smith, Courtney - Health and Cheerleading</a>
-            </li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1228">Spann, Lori - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/803">Speck, Lisa - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1935">Swinney, Cassidy - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2061">Swinney, Jacob - Science</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1629">Switzer, Hale - Science CAB</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1059">Tarter, Lorelei - Math CAB</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/804">Taylor, Barrett - French</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/858">Thames, Hardy - History</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/787">Tucker, Charles - Business Marketing CAB</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/2063">Turner, Bradford - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/824">Ulrich, Courtney - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1789">Vernon, Daniel - Choir</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1227">Vonder Bruegge, Nicole - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1178">Wadsworth, Patrick - English STEM</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1936">Wedgeworth, Natalie - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/825">Wedgeworth, Scott - Math STEM</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1791">Wetherington, Alanna - Special Education</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/867">Wetzel, Kristy - Special Eduaction</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/826">White, Glenn - Math</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1605">White, Katheryn - English</a></li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1801">Wilson, Beth - Education and Training HHS</a>
-            </li>
-            <li><a style="text-decoration: none" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1792">Wilson, James - Math</a></li>
-            <li><a style="text-decoration: none;" target="_blank" class="vivify fadeIn" href="https://www.gulfportschools.org/Domain/1977">Woodberry, Michele - Physical Education</a></li>
-
-        </ul>
-
-    </div>
-
-
-    <script>
-        $(window).scroll(function() {
-
-
-            var scroll = $(window).scrollTop();
-            if (scroll > 200) {
-                $(".nav-element").addClass("sticky");
-            } else {
-                $(".nav-element").removeClass("sticky");
-            }
-
-            if (scroll > 400) {
-                $(".indicator").addClass("sticky");
-            } else {
-                $(".indicator").removeClass("sticky");
-            }
-        });
-
-    </script>
-
-
-
-
-
-    <script>
-        function launch_toast() {
-            var x = document.getElementById("toast")
-            x.className = "show";
-            setTimeout(function() {
-                x.className = x.className.replace("show", "");
-            }, 5000);
-        }
-
-    </script>
-
-    <script defer src="script.js">
-    </script>
-    <script>
-        var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-        if (iOS = true) {
-            document.getElementsByClassName("logo-wrapper")[0].setAttribute("ios-logo", "iOS-device");
-        }
-
-    </script>
-    <script>
-        AOS.init();
-
-    </script>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-    </script>
-    <script src="sw.js"></script>
-    <script src="Service-Worker.js"></script>
-    <script>
-        $("a").click(function(event) {
-            event.preventDefault();
-            window.location = $(this).attr("href");
-        });
-
-    </script>
-    <script>
-        window.addEventListener('load', function() {
-            var allimages = document.getElementsByTagName('img');
-            for (var i = 0; i < allimages.length; i++) {
-                if (allimages[i].getAttribute('data-src')) {
-                    allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-                }
-            }
-        }, false)
-
-    </script>
-
-    <script>
-        $(document).ready(function($) {
-            var mode = localStorage.getItem('mode');
-            if (mode)
-                $('body').addClass(mode);
-
-            $(".darkmode").click(function() {
-                $("body").addClass("darkclass");
-                localStorage.setItem('mode', 'darkclass');
-            });
-
-            $(".normalmode").click(function() {
-                $("body").removeClass("darkclass");
-                localStorage.setItem('mode', null);
-            });
-        });
-
-    </script>
-
-    <script>
-        window.setTimeout(loaded, 1500);
-        var element = document.getElementById('loader');
-
-        function loaded() {
-            element.style.display = 'none';
-        }
-
-    </script>
+    <script>window.onload = function() {
+            filterSelection('all');
+};</script>
 </body>
 
 </html>
